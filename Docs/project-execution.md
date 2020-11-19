@@ -212,4 +212,4 @@ Here is an example of how the data science project work items should appear in B
 ![](https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/media/agile-development/18-workitems1.png)
 
 ## Next steps
-[Collaborative coding[(https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/collaboartive-Coding.md) with Git describes how to do collaborative code development for data science projects using Git as the shared code development framework, and how to link these coding activities to the work planned with the agile process. 
+[Collaborative coding](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/collaboartive-Coding.md) with Git describes how to do collaborative code development for data science projects using Git as the shared code development framework, and how to link these coding activities to the work planned with the agile process. 
