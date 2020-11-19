@@ -177,13 +177,39 @@ After you complete the steps, the backlog levels should look like this:
 
 ##  7. <a name='CreateAgileDSPWorkItems-7'></a>Create Agile Data Science Process work items
 
+You can use the data science process template to create TDSP projects and track work items that correspond to TDSP lifecycle stages.
 
+1. From your Azure DevOps organization main page, select **New project**.
 
+2. In the **Create new project** dialog, give your project a name, and then select **Advanced**.
 
-	git checkout <branch name>
+3. Under **Work item process**, drop down and select **AgileDataScienceProcess**, and then select **Create**.
 
+![](https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/media/agile-development/15-newproject.png)
 
-	
-	git checkout -b <new branch name> <base branch name>
+4. In the newly created project, select **Boards > Backlogs** in the left navigation.
 
- 
+5. To make TDSP Projects visible, select the **Configure team settings** icon. In the **Settings** screen, select the **TDSP Projects** check box, and then select **Save and close.**
+
+![](https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/media/agile-development/16-enabledsprojects1.png)
+
+6. To create a data science-specific TDSP Project, select **TDSP Projects** in the top bar, and then select **New work item.**
+
+7. In the popup, give the TDSP Project work item a name, and select **Add to top.**
+
+![](https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/media/agile-development/17-dsworkitems0.png)
+
+8. To add a work item under the TDSP Project, select the + next to the project, and then select the type of work item to create.
+
+![](https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/media/agile-development/17-dsworkitems1.png)
+
+9 Fill in the details in the new work item, and select **Save & Close.**
+
+10. Continue to select the + symbols next to work items to add new TDSP Stages, Substages, and Tasks.
+
+Here is an example of how the data science project work items should appear in Backlogs view:
+
+![](https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/media/agile-development/18-workitems1.png)
+
+## Next steps
+Collaborative coding with Git describes how to do collaborative code development for data science projects using Git as the shared code development framework, and how to link these coding activities to the work planned with the agile process. 
