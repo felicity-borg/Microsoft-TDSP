@@ -42,6 +42,7 @@ The following figure illustrates a typical sprint planning, coding and source-co
 4. [Add a User Story to the Feature](#AddStoryunderfeature-4)
 5. [Add a Task to a User Story](#AddTaskunderstory-5)
 6. [Use an agile TDSP work template](#Linkaworkitemwithagitbranch-6)
+7. [Create Agile Data Science Process work items](#CreateAgileDSPWorkItems-7)
 
 ##  1. <a name='WorkItems-1'></a>Work item types
 
@@ -105,14 +106,77 @@ To add a new User Story to a Feature:
 
 ![](https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/media/agile-development/4-sprint-add-story.png)
 
+2. Give the User Story a title, and edit details such as assignment, status, description, comments, planning, and priority.
 
+You can also link the User Story to a branch of the project's Azure Repos code repository by selecting **Add link** under the **Development** section. Select the repository and branch you want to link the work item to, and then select **OK**.
+
+![](https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/media/agile-development/5-sprint-edit-story.png)
+
+3. When you're finished editing the User Story, select **Save & Close**.
 
 ##  5. <a name='AddTaskunderstory-5'></a>Add a Task to a User Story
 
+Tasks are specific detailed steps that are needed to complete each User Story. After all Tasks of a User Story are completed, the User Story should be completed too.
+
+To add a Task to a User Story, select the + next to the User Story item, and select **Task**. Fill in the title and other information in the Task.
+
+![](https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/media/agile-development/7-sprint-add-task.png)
+
+After you create Features, User Stories, and Tasks, you can view them in the **Backlogs** or **Boards** views to track their status.
+
+![](https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/media/agile-development/8-sprint-backlog-view.png)
+
+![](https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/media/agile-development/8a-sprint-board-view.png)
 
 
 
 ##  6. <a name='Linkaworkitemwithagitbranch-6'></a>Use an agile TDSP work template
+
+1. From your Azure DevOps organization main page, select **Organization settings** from the left navigation.
+
+2. In the **Organization Settings** left navigation, under **Boards**, select **Process**.
+
+3. In the **All processes** pane, select the ... next to **Agile**, and then select **Create inherited process**.
+
+![](https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/media/agile-development/10-settings.png)
+
+4. In the **Create inherited process from Agile** dialog, enter the name *AgileDataScienceProcess*, and select **Create process**.
+
+![](https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/media/agile-development/11-agileds.png)
+
+5. In **All processes**, select the new **AgileDataScienceProcess**.
+
+6. On the **Work item types** tab, disable **Epic, Feature, User Story,** and **Task** by selecting the ... next to each item and then selecting **Disable**.
+
+![](https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/media/agile-development/12-disable.png)
+
+7. In **All processes**, select the **Backlog levels** tab. Under **Portfolios backlogs**, select the ... next to **Epic (disabled)**, and then select **Edit/Rename**.
+
+8. In the **Edit backlog** level dialog box:
+a. Under **Name**, replace **Epic** with *TDSP Projects*.
+b. Under **Work item types on this backlog level**, select **New work item type**, enter *TDSP Project*, and select **Add**.
+c. Under **Default work item** type, drop down and select **TDSP Project**.
+d. Select **Save**.
+
+![](https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/media/agile-development/13-rename.png)
+
+9. Follow the same steps to rename **Features** to *TDSP Stages*, and add the following new work item types:
+
+* *Business Understanding*
+* *Data Acquisition*
+* *Modeling*
+* *Deployment*
+
+10. Under **Requirement backlog**, rename **Stories** to *TDSP Substages*, add the new work item type *TDSP Substage*, and set the default work item type to **TDSP Substage**.
+
+11. Under **Iteration backlog**, add a new work item type *TDSP Task*, and set it to be the default work item type.
+
+After you complete the steps, the backlog levels should look like this:
+
+![](https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/media/agile-development/14-template.png)
+
+##  7. <a name='CreateAgileDSPWorkItems-7'></a>Create Agile Data Science Process work items
+
 
 
 
