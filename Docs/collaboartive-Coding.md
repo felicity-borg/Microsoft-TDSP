@@ -2,7 +2,13 @@
 
 This article describes how to use Git as the collaborative code development framework for data science projects. The article covers how to link code in Azure Repos to [agile development](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/project-execution.md) work items in Azure Boards, how to do code reviews, and how to create and merge pull requests for changes.
 
-## Link a work item to an Azure Repos branch
+1. [Link a work item to an Azure Repos branch](#LinkWorkItem-1)
+2. [Work on the branch and commit changes](#WorkCommit-2)
+3. [Create a pull request](#PullRequest-3)
+4. [Review and merge](#ReviewMerge-4)
+
+
+##  1. <a name = 'LinkWorkItem-1'></a>Link a work item to an Azure Repos branch
 Azure DevOps provides a convenient way to connect an Azure Boards User Story or Task work item with an Azure Repos Git repository branch. You can link your User Story or Task directly to the code associated with it.
 
 To connect a work item to a new branch, select the **Actions** ellipsis (...) next to the work item, and on the context menu, scroll to and select **New branch**.
@@ -34,7 +40,7 @@ You can also link a work item to an existing branch. On the **Detail** page of a
 ![](https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/media/collaborative-coding-with-git/4-link-to-an-existing-branch.png)
 
 
-## Work on the branch and commit changes
+##  2. <b name='WorkCommit-2'></b>Work on the branch and commit changes
 After you make a change for your work item, such as adding an R script file to your local machine's `script` branch, you can commit the change from your local branch to the upstream working branch by using the following `Git bash` commands:
 
 `git status` <br>
@@ -44,7 +50,7 @@ After you make a change for your work item, such as adding an R script file to y
 
 ![](https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/media/collaborative-coding-with-git/5-sprint-push-to-branch.png)
 
-## Create a pull request
+##  3. <b name = 'PullRequest-3'></b>Create a pull request
 
 After one or more commits and pushes, when you're ready to merge your current working branch into its base branch, you can create and submit a *pull request* in Azure Repos.
 
@@ -56,8 +62,9 @@ On the **New Pull Request** screen, if necessary, navigate to the Git repository
 
 ![](https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/media/collaborative-coding-with-git/7-spring-send-pull-request.png)
 
-*
-## Review and merge
+
+##  4. <a name = 'ReviewMerge-4'></a>Review and merge
+
 Once you create the pull request, your reviewers get an email notification to review the pull request. The reviewers test whether the changes work, and check the changes with the requester if possible. The reviewers can make comments, request changes, and approve or reject the pull request based on their assessment.
 
 ![](https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/media/collaborative-coding-with-git/8-add_comments.png)
