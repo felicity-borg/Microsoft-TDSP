@@ -36,33 +36,35 @@ The following figure illustrates a typical sprint planning, coding and source-co
 ![1](./media/project-execution/project-execution-1-project-execute.png)
 
 
-1. [Work item types](#Work item types-1)
-2. [Plan sprints](#Plan sprints-2)
+1. [Work item types](#WorkItems-1)
+2. [Plan sprints](#PlanSprints-2)
 3. [Add a Feature to the backlog](#AddFeature-3)
 4. [Add a User Story to the Feature](#AddStoryunderfeature-4)
 5. [Add a Task to a User Story](#AddTaskunderstory-5)
 6. [Use an agile TDSP work template](#Linkaworkitemwithagitbranch-6)
 
-##  1. <a name='Work item types-1'></a>Work item types
+##  1. <a name='WorkItems-1'></a>Work item types
 
 In the TDSP sprint planning framework, there are four frequently used types of **work items**: **Feature**, **User Story**, **Task**, and **Bug**. Each team project maintains a single backlog for all work items. There is no backlog at the git repository level under a team project. Here are their definitions:
 
-- **Feature**: A feature corresponds to a project engagement. Different engagements with a client are considered different features. Similarly, it is best to consider different phases of a project with a client as different features. If you choose a schema such as ***ClientName-EngagementName*** to name your features, then you can easily recognize the context of the project/engagement from the names themselves.
-- **Story**: Stories are different work items that are needed to complete a feature (project) end-to-end. Examples of stories include:
-	- Getting Data 
-	- Exploring Data 
-	- Generating Features
-	- Building Models
-	- Operationalizing Models 
-	- Retraining Models
-- **Task**: Tasks are assignable code or document work items or other activities that need to be done to complete a specific story. For example, tasks in the story *Getting Data* could be:
-	-  Getting Credentials of SQL Server 
-	-  Uploading Data to SQL Data Warehouse. 
-- **Bug**: Bugs usually refer to fixes that are needed for an existing code or document that are done when completing a task. It can escalate to being a story or a task if the bug is caused by missing stages or tasks respectively. 
+- **Feature**: A feature corresponds to a project engagement. Different engagements with a client are considered different Features. Similarly, it is best to consider different phases of a project with a client as different Features. If you choose a schema such as *<ClientName>-<EngagementName>* to name your Features, then you can easily recognize the context of the project/engagement from the names themselves.
+- **User Story**: User Stories are work items needed to complete a Feature (project) end-to-end. Examples of User Stories include: 
+	- Get Data 
+	- Explore Data 
+	- Generate Features
+	- Build Models
+	- Operationalize Models 
+	- Retrain Models
+- **Task**: Tasks are assignable work items that need to be done to complete a specific User Story. For example, Tasks in the User Story *Get data* could be:
+	-  Get SQL Server credentials
+	-  Upload data to Azure Synapse Analytics 
+- **Bug**: Bugs are issues in existing code or documents that must be fixed to complete a Task. If Bugs are caused by missing work items, they can escalate to be User Stories or Tasks respectively. 
+	
+Data scientists may feel more comfortable using an agile template that replaces Features, User Stories, and Tasks with TDSP lifecycle stages and substages. To create an agile-derived template that specifically aligns with the TDSP lifecycle stages, see Use an agile TDSP work template.
 
->[AZURE.NOTE] We are borrowing concepts of features, stories, tasks, and bugs from software code management (SCM) to be used in data science. They might differ slightly from their conventional  SCM definitions.
+>[AZURE.NOTE] TDSP borrows the concepts of Features, User Stories, Tasks, and Bugs from software code management (SCM). The TDSP concepts might differ slightly from their conventional SCM definitions.
 
-##  2. <a name='Plan sprints-2'></a>Plan sprints
+##  2. <a name='PlanSprints-2'></a>Plan sprints
 
 Sprint planning is useful for project prioritization, and resource planning and allocation. Many data scientists are engaged with multiple projects, each of which can take months to complete. Projects often proceed at different paces. On the VSTS server, you can easily create, manage, and track work items in your team project and conduct sprint planning to ensure that your projects are moving forward as expected. 
 
