@@ -50,7 +50,7 @@ After you make a change for your work item, such as adding an R script file to y
 
 ![](https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/media/collaborative-coding-with-git/5-sprint-push-to-branch.png)
 
-*These commands are inserted in the Git command-line tool—you can find more details on how to install this [here](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/createRepo.md).
+*These commands are inserted in the Git command-line tool—you can find more details on how to install this [here](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/createRepo.md).*
 
 ##  3. <b name = 'PullRequest-3'></b>Create a pull request
 
