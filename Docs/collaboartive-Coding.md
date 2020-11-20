@@ -1,6 +1,6 @@
 # Collaborative coding with Git
 
-This article describes how to use Git as the collaborative code development framework for data science projects. The article covers how to link code in Azure Repos to [agile development](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/project-execution.md) work items in Azure Boards, how to do code reviews, and how to create and merge pull requests for changes.
+This article describes how to use Git as the collaborative code development framework for data science projects. The article covers how to link code in Azure Repos to [agile development](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/project-execution.md) work items in Azure Boards, how to do code reviews, and how to create and merge pull requests for changes. For details on how to create a Git repos for your project see [here](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/createRepo.md).
 
 1. [Link a work item to an Azure Repos branch](#LinkWorkItem-1)
 2. [Work on the branch and commit changes](#WorkCommit-2)
