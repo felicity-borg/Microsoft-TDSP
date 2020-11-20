@@ -77,6 +77,8 @@ For more information about sprint planning in Azure Boards, see [Assign backlog 
 ##  3. <a name='AddFeature-3'></a>Add a Feature to the backlog
 
 After your project and project code repository are created, you can add a Feature to the backlog to represent the work for your project.
+For details on how to create a project click [here](https://docs.microsoft.com/en-us/azure/devops/organizations/projects/create-project?view=azure-devops&tabs=preview-page).
+For detils on how to create a code repository click [here](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/createRepo.md)
 
 1. From your project page, select **Boards > Backlogs** in the left navigation.
 
