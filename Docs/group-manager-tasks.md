@@ -203,9 +203,11 @@ To configure permissions for members:
 
 ## Next Steps:
 
+Here are links to detailed descriptions of the other roles and tasks in the Team Data Science Process:
+
 * [Team Lead tasks for a data science team](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/team-lead-tasks.md)
 * [Project Lead tasks for a data science team](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/project-lead-tasks.md)
 * [Project Individual Contributor tasks for a data science team](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/project-ic-tasks.md)
 
 
-Here are links to detailed descriptions of the other roles and tasks in the Team Data Science Process:
+
