@@ -106,7 +106,7 @@ The team project **Summary** page opens, with page URL *https://<server name>/<o
 
 ## Create the TeamTemplate repository
 
-1. On the ##Project Settings** page, select **New repository**. 
+1. On the **Project Settings** page, select **New repository**. 
 ![](https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/media/team-lead-tasks/team-leads-9-create-team-utilities.png)
 
 Or, select **Repos** from the left navigation of the **MyTeam** project **Summary** page, select a repository at the top of the page, and then select **New repository** from the dropdown.
