@@ -13,7 +13,7 @@ This document will detail how to create a Git repo using the web portal for Azur
 # Create a repo using the web portal
 1. Navigate to the **Repos** page in your project, hover your mouse over the name of your project and select the **Repos** icon. 
 ![](https://docs.microsoft.com/en-us/azure/devops/repos/git/media/repo-mgmt/select-project-repos.png?view=azure-devops)
-2. Fro the repo drow-down, select **New repository**.
+2. From the repo drow-down, select **New repository**.
 ![](https://docs.microsoft.com/en-us/azure/devops/repos/git/media/repo-mgmt/new-repository.png?view=azure-devops)
 3. In the **Create a new repository** dialog, verify that Git is the repo type and enter a name for your new repo. You can also choose to add a README and create a .gitignore for the type of code you plan to manage in the repo. A README contains information about the code in your repo, and a .gitignore file tells Git which types of files to ignore, such as temporary build files from your development environment.
 ![](https://docs.microsoft.com/en-us/azure/devops/repos/git/media/repo-mgmt/create-a-new-repository.png?view=azure-devops)
@@ -24,8 +24,11 @@ A new empty Git repo is now created in your project.
 * If you created an empty repo (no README or .gitignore), you'll see instructions on how to clone the repo to your computer or push code in an existing repo into the newly created one.
 In this example you created a README and a .gitignore, so you'll see an overview of the files in your repo, and you can **clone** the repo using the Clone link on the upper right of the page to get working with a local copy of the repo immediately.
 
+For details on how to clone the repo to your Azure ML JupyterLab click [here](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/gitIntegration.md).
+If you are working with another IDE such as Visual Code and want to work with a local cope ony our compute follow the steps below. 
+
 # Clone the repo to your computer
-To work with a Git repo, you clone it to your computer. Cloning a repo creates a complete local copy of the repo for you to work with, and downloads all commits and branches in the repo and sets up a named relationship with the repo on the server. Use this relationship to interact with the existing repo, pushing and pulling changes to share code with your team.
+To work with a Git repo, you clone it to your computer or other developing workspace. Cloning a repo creates a complete local copy of the repo for you to work with, and downloads all commits and branches in the repo and sets up a named relationship with the repo on the server. Use this relationship to interact with the existing repo, pushing and pulling changes to share code with your team.
 
 1. From your web browser, open the team project for your organization in Azure DevOps and select **Repos > Files**. If you don't have a team project, create one now.
 ![](https://docs.microsoft.com/en-us/azure/devops/repos/get-started/media/clone-repo/repos-files.png?view=azure-devops)
