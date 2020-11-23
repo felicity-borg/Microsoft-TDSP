@@ -34,7 +34,7 @@ The following diagram shows the workflow for the tasks the team lead completes t
 
 3. Create a new **TeamTemplate** repository in the team project.
 
-4 .Import the contents of the group's **GroupUtilities** and **GroupProjectTemplate** repositories into the **TeamUtilities** and **TeamTemplate** repositories.
+4 Import the contents of the group's **GroupUtilities** and **GroupProjectTemplate** repositories into the **TeamUtilities** and **TeamTemplate** repositories.
 
 5. Set up **security control** by adding team members and configuring their permissions.
 
@@ -73,7 +73,7 @@ If teams choose to have their team-specific repositories under a single group pr
 
 In any case, team leads need to let their team members know which template and utilities repositories to set up and clone. Project leads should follow the project lead tasks for a data science team to create project repositories, whether under separate projects or a single project.
 
-##* Create the MyTeam project
+## Create the MyTeam project
 To create a separate project for your team:
 
 1. In your web browser, go to your group's Azure DevOps organization home page at URL *https://<server name>/<organization name>*, and select **New project**.
