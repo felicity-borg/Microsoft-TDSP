@@ -49,3 +49,11 @@ To work with repositories locally and push your changes up to the shared team an
 
 For instructions on how to clone the repository to your Azure ML notebooks click [here](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/gitIntegration.md).
 For details on how to connect to storage services on Azue see [here](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-access-data). 
+
+## Next Steps:
+
+Here are links to detailed descriptions of the other roles and tasks in the Team Data Science Process:
+
+* [Group Managr tasks fr a data science team](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/group-manager-tasks.md)
+* [Project Lead tasks for a data science team](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/project-lead-tasks.md)
+* [Team Lead tasks for a data science team](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/team-lead-tasks.md)
