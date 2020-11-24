@@ -199,7 +199,7 @@ To configure permissions for members:
 
 4. In the **Invite members** popup, search for and select members to add to the group, and then select **Save**.
 
-![]https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/media/group-manager-tasks/grant-permissions.png)
+![](https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/media/group-manager-tasks/grant-permissions.png)
 
 ## Next Steps:
 
