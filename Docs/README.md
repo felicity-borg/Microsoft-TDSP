@@ -20,7 +20,7 @@
 
 The Team Data Science Process (TDSP) is an agile, iterative data science methodology to deliver predictive analytics solutions and intelligent applications efficiently. TDSP helps improve team collaboration and learning by suggesting how team roles work best together. TDSP includes best practices and structures from Microsoft and other industry leaders to help toward successful implementation of data science initiatives. The goal is to help companies fully realize the benefits of their analytics program.
 
-This document provides an overview of TDSP and its main components. A generic description of the process is provided her and can be implemented with different kinds of tools. A more detailed description of the project tasks and roles involved in the lifecycle of the process is provided in additional linked documents. Guidance on how to implement the TDSP using a specific set of Microsoft tools and infrastructure is also provided.
+This document provides an overview of TDSP and its main components. A generic description of the process is provided here and can be implemented with different kinds of tools. A more detailed description of the project tasks and roles involved in the lifecycle of the process is provided in additional linked documents. Guidance on how to implement the TDSP using a specific set of Microsoft tools and infrastructure is also provided.
 
 
 ## Key components of the TDSP
