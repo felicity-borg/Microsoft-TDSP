@@ -34,7 +34,7 @@ TDSP has the following key components:
 ## Data science lifecycle
 The Team Data Science Process (TDSP) provides a lifecycle to structure the development of your data science projects. The lifecycle outlines the full steps that successful projects follow.
 
-This process has a lot of overlap with the Cross-industry Standard process for Data Mining (CRISP-DM) used by Peak, making the TDSP's components applicable to projects following the CRISP_DM lifecycle. As confirmed by [Microsft](https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/overview); at a high level, these different methodologies have a lot in common.
+This process has a lot of overlap with the Cross-industry Standard process for Data Mining (CRISP-DM) used by Peak Indicators, making the TDSP's components applicable to projects following the CRISP_DM lifecycle. As confirmed by [Microsft](https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/overview); at a high level, these different methodologies have a lot in common.
 
 This lifecycle has been designed for data science projects that ship as part of intelligent applications. These applications deploy machine learning or artificial intelligence models for predictive analytics. Exploratory data science projects or improvised analytics projects can also benefit from using this process. But in such cases some of the steps described may not be needed.
 
