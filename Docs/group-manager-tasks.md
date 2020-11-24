@@ -30,7 +30,7 @@ The following diagram shows the six main group manager setup tasks. Group manage
 3. Create the **GroupProjectTemplate** repository in Azure Repos.
 4. Create the **GroupUtilities** repository in Azure Repos.
 5. Import the contents of the Microsoft TDSP team's **ProjectTemplate** and **Utilities** repositories into the group common repositories. <br>
-6 .Set up **membership** and **permissions** for team members to access the group.
+6. Set up **membership** and **permissions** for team members to access the group.
 
 Each of the above steps are described in further detail below.
 
