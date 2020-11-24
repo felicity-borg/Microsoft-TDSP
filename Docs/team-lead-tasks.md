@@ -244,7 +244,7 @@ Confirm that the new drive and storage is successfully mounted on your machine.
 
 Here are links to detailed descriptions of the other roles and tasks in the Team Data Science Process:
 
-* [Group Managr tasks fr a data science team](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/group-manager-tasks.md)
+* [Group Managr tasks for a data science team](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/group-manager-tasks.md)
 * [Project Lead tasks for a data science team](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/project-lead-tasks.md)
 * [Project Individual Contributor tasks for a data science team](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/project-ic-tasks.md)
 
