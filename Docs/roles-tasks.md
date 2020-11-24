@@ -33,7 +33,7 @@ Data science functions in enterprises are often organized in the following hiera
 In such a structure, there are group leads and team leads. Typically, a data science project is done by a data science team. Data science teams have project leads for project management and governance tasks, and individual data scientists and engineers to perform the data science and data engineering parts of the project. The initial project setup and governance is done by the group, team, or project leads.
 
 ## Definition and tasks for the four roles in the Data Science Group
-With the assumption that the data science group unit consists of teams, there are four distinct roles within the group :
+With the assumption that the data science group unit consists of teams, there are four distinct roles within the team:
 
 **Group Manager**: Manages the entire data science unit in an enterprise. A data science unit might have multiple teams, each of which is working on multiple data science projects in distinct business verticals. A Group Manager might delegate their tasks to a surrogate, but the tasks associated with the role do not change.
 
