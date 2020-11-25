@@ -1,6 +1,6 @@
 # Team Data Science Process Documentation
 
-Hot to use the Team Data Science Processs, an agile iterative data science metholdology for predictive analytics solutions and intelligent applications. 
+How to use the Team Data Science Processs, an agile iterative data science metholdology for predictive analytics solutions and intelligent applications. 
 
 Contents: 
 
