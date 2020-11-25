@@ -132,3 +132,35 @@ cd fabrikam-fiber
 
 For details on how to work with git such as using `commit` to save changes and using `push` to share code refer to the **command line** examples shown under docuemnts titles **Commits, push, fetch, pull** shown on the left [here](https://docs.microsoft.com/en-us/azure/devops/repos/git/commits?view=azure-devops&tabs=command-line)
 
+
+### Notes on usng a Compute Instance
+#### Accessing files
+Notebooks and R scripts are stored in the default storage account of your workspace in Azure file share. These files are located under your “User files” directory. This storage makes it easy to share notebooks between compute instances. The storage account also keeps your notebooks safely preserved when you stop or delete a compute instance.
+
+The Azure file share account of your workspace is mounted as a drive on the compute instance. This drive is the default working directory for Jupyter, Jupyter Labs, and RStudio. This means that the notebooks and other files you create in Jupyter, JupyterLab, or RStudio are automatically stored on the file share and are accessibe from all compute instances in the same workspace.
+
+#### Managing a compute instance
+
+Azure [RBAC](https://docs.microsoft.com/en-us/azure/role-based-access-control/overview) allows you to control which users in the workspace can create, delete, start, stop, restart a compute instance. All users in the workspace contributor and owner role can create, delete, start, stop, and restart compute instances across the workspace. However, only the creator of a specific compute instance, or the user assigned if it was created on their behalf, is allowed to access Jupyter, JupyterLab, and RStudio on that compute instance. A compute instance is dedicated to a single user who has root access, and can terminal in through Jupyter/JupyterLab/RStudio. Compute instance will have single-user log in and all actions will use that user’s identity for Azure RBAC and attribution of experiment runs. SSH access is controlled through public/private key mechanism.
+
+These actions can be controlled by Azure RBAC:
+
+* *Microsoft.MachineLearningServices/workspaces/computes/read*
+* *Microsoft.MachineLearningServices/workspaces/computes/write*
+* *Microsoft.MachineLearningServices/workspaces/computes/delete*
+* *Microsoft.MachineLearningServices/workspaces/computes/start/action*
+* *Microsoft.MachineLearningServices/workspaces/computes/stop/action*
+* *Microsoft.MachineLearningServices/workspaces/computes/restart/action*
+
+### Collaborate on Jupyer Notebooks by adding contributor
+
+* Navigate to your Azure Ml workspace on the Azure portal
+* Select **Access control (IAM)** on the left for your machine learning resource
+* Click the option **Add** for **Add role assignent** on the right
+* Select *Contributor* for **role**
+* Leave **Assign access to** as the default
+* Search for the person you want to select as a *conrtributor* in the search bar for **Select**
+* Select **Save**
+
+The person has now been added as a contributor and can assess and contribue to your work. 
+ You can, however, collaborate on Jupyter Notebooks 
