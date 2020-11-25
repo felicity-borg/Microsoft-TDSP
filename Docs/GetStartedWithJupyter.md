@@ -71,7 +71,7 @@ In your Azure Machine Learning workspace, create a new Jupyter notebook and star
 
 To create a new notebook:
 
-1. Open your workspace in [Azure MAchine Learning studio](https://ml.azure.com/).
+1. Open your workspace in [Azure Machine Learning studio](https://ml.azure.com/).
 2. On the left side, select **Notebooks**.
 3. Select the **Create new file** icon above the list **User files** in the **My files** section. <br>
 ![](https://docs.microsoft.com/en-us/azure/machine-learning/media/how-to-run-jupyter-notebooks/create-new-file.png)
