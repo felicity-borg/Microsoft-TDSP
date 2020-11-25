@@ -59,4 +59,74 @@ Select visibility of either public or private. When you choose public visibility
 
 A new empty Git repo is now created in your project.
 
-## 3. 
+## 3. Run a notebook in your workspace
+
+For details on how to create and manage an Azure ML workspace click [here](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/azure-ml-workspace.md).
+
+### Create notebooks
+
+In your Azure Machine Learning workspace, create a new Jupyter notebook and start working. The newly created notebook is stored in the default workspace storage. This notebook can be shared with anyone with access to the workspace.
+
+To create a new notebook:
+
+1. Open your workspace in [Azure MAchine Learning studio](https://ml.azure.com/).
+2. On the left side, select **Notebooks**.
+3. Select the **Create new file** icon above the list **User files** in the **My files** section. <br>
+![](https://docs.microsoft.com/en-us/azure/machine-learning/media/how-to-run-jupyter-notebooks/create-new-file.png)
+
+4. Name the file.
+
+5. For Jupyter Notebook Files, select **Notebook** as the file type.
+
+6. It is recommended that you select your file directory so that others will not make collisions directly on your working branch when pushhing your code to `git`.
+
+7. Select **Create**.
+
+You can create text files as well. Select **Text** as the file type and add the extension to the name (for example, myfile.md or myfile.txt)
+
+You can also upload folders and files, including notebooks, with the tools at the top of the Notebooks page. Notebooks and most text file types display in the preview section. No preview is available for most other file types.
+
+### Create a compute instance
+1. In your workspace in Azure Machine Learning studio, select **Compute**, then select **Compute Instance** on the top. <br>
+![](hhttps://docs.microsoft.com/en-us/azure/machine-learning/media/how-to-create-attach-studio/create-compute-target.png)
+
+2. If you see a list of compute resources, select **+New** above the list. <br>
+![](https://docs.microsoft.com/en-us/azure/machine-learning/media/how-to-create-attach-studio/select-new.png)
+
+3. Fill out the form for your compute instance <br>
+![](https://docs.microsoft.com/en-us/azure/machine-learning/media/concept-compute-instance/create-compute-instance.png)
+
+| **Field** | **Description** |
+| --------- | --------------- |
+| Compute name | * Name is required and must be between 3 to 24 characters long.
+* Valid characters are upper and lower case letters, digits, and the - character.
+* Name must start with a letter.
+* Name needs to be unique across all existing computes within an Azure region. You will see an alert if the name you choose is not unique.
+* If - character is used, then it needs to be followed by at least one letter later in the name. |
+| Virtual machine type | Chooose CPU or GPU. thus type cannot be changed after creation. Select CPU for general use unless you know your code will use GPU (example for training deep learning models |
+| Virtual machine size | Supported virtual machine sizes might be restricted in your region. Check the [availability list](https://azure.microsoft.com/global-infrastructure/services/?products=virtual-machines) |
+| Enable/disable SSH access | SSH access is disabled by default. SSH access cannot be. changed after creation. Make sure to enable access if you plan to debug interactively with [VS Code Remote](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-set-up-vs-code-remote) |
+| Advanced settings | Optional. Configure a virtual network. Specify the **Resource group**, **Virtual network**, and **Subnet** to create the compute instance inside an Azure Virtual Network (vnet). For more information, see these network requirements for vnet.
+
+4. Select **Create**
+
+5. View the status of the create operation by selecting the compute target from the list
+
+![](https://docs.microsoft.com/en-us/azure/machine-learning/media/how-to-create-attach-studio/view-list.png)
+
+### Clone Git repositories into your workspace file system
+
+Azure Machine Learning provides a shared file system for all users in the workspace. To clone a Git repository into this file share:
+* Follow the instructions [here](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/gitIntegration.md) to copy the details needed to clone the Git repo. 
+* Go back to your Azure ML workspace
+* Open a terminal. Once the terminal is opened, you have access to a full Git client and can clone and work with Git via the Git CLI experience.
+* It is advised that you clone the repository into your users directory so that others will not make collisions directly on your working branch. To do this type cd <path to you user directory> e.g. `cd david`
+* Run git clone followed by the followed by the path copied from the Clone URL in the previous section, as shown in the following example. git clone https://dev.azure.com/fabrikam-fiber/MyFirstProject/_git/
+* Next it will ask for a password, paste the password shown when you cloned your git repo as shown [here](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/gitIntegration.md) and press Enter. <br>
+Git downloads a copy of the code, including all commits and branches from the repo, into a new folder for you to work with.
+
+Switch your directory to the repository that you cloned. For e.g.
+cd fabrikam-fiber
+
+For details on how to work with git such as using `commit` to save changes and using `push` to share code refer to the **command line** examples shown under docuemnts titles **Commits, push, fetch, pull** shown on the left [here](https://docs.microsoft.com/en-us/azure/devops/repos/git/commits?view=azure-devops&tabs=command-line)
+
