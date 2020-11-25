@@ -15,6 +15,9 @@
 	ms.topic="article"
 	ms.date="09/22/2016"
 	ms.author="bradsev;hangzh;deguhath"/>
+	
+# Documentation Contents
+
 
 # What is the Team Data Science Process?
 
