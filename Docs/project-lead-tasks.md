@@ -78,7 +78,7 @@ To populate your project repository with the contents of your team template repo
 
 ![](https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/media/project-lead-tasks/project-leads-6-create-project-repo-5.png)
 
-If you need to customize the contents of your project repository to meet your project's specific needs, you can add, delete, or modify repository files and folders. You can work directly in Azure Repos, or clone the repository to your local machine or DSVM, make changes, and commit and push your updates to the shared project repository. Follow the instructions at **Customize the contents of the team repositories**[here](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/team-lead-tasks.md).
+If you need to customize the contents of your project repository to meet your project's specific needs, you can add, delete, or modify repository files and folders. You can work directly in Azure Repos, or clone the repository to your local machine or DSVM, make changes, and commit and push your updates to the shared project repository. Follow the instructions at **Customize the contents of the team repositories** [here](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/team-lead-tasks.md).
 
 
 ## Next Steps:
