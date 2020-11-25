@@ -13,13 +13,13 @@ To work with a Git repo, you need to clone the repo you will be working on for t
 For details on how to create a Git repo for your project click [here](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/createRepo.md).<br>
 ![](https://docs.microsoft.com/en-us/azure/devops/repos/get-started/media/clone-repo/repos-files.png?view=azure-devops)
 
-2. Select **Clone** in the upper-right corner of the **Files** window and copy the clone URL; if there is a password ensure you take a note of this as you will need it in the next step. <br>
+2. Select **Clone** in the upper-right corner of the **Files** window and copy the clone URL; and password—you will need both in the following step. <br>
 ![](https://docs.microsoft.com/en-us/azure/devops/repos/get-started/media/clone-repo/clone-repo.png?view=azure-devops)
 
 3. Access Azure ML JupyterLab and open a terminal Session. Run `git clone` followed by the followed by the path copied from the Clone URL in the previous section, as shown in the following example.
 `git clone https://dev.azure.com/fabrikam-fiber/MyFirstProject/_git/`
 
-If it asks for a password, paste the password shown in Azure DevOps Clone Repositiory screen in the step above. Press **Enter**. 
+Next it will ask for a password, paste the password shown in the step above and press **Enter**. 
 Git downloads a copy of the code, including all commits and branches from the repo, into a new folder for you to work with.
 
 4. Switch your directory to the repository that you cloned. For e.g. 
