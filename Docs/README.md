@@ -29,6 +29,10 @@
   * [Git repositories](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/createRepo.md)
   * [Integrating AzureML notebooks with Git](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/gitIntegration.md)
   * [Collaborative coding with git](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/collaboartive-Coding.md)
+* Getting Started
+  * [Create a Machine Learning Workspace](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/azure-ml-workspace.md)
+  * [Get Started with Jupyter](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/GetStartedWithJupyter.md)
+  
 
 # What is the Team Data Science Process?
 
