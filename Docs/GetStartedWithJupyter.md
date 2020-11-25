@@ -47,7 +47,7 @@ Select visibility of either public or private. When you choose public visibility
 * **Invite**: on the top right if you want to add others to your project. See [Add users to a project or team](https://docs.microsoft.com/en-us/azure/devops/organizations/security/add-users-team-project?view=azure-devops). You can only invite users who are already in your organization.
 
 
-## Add a repository to your project
+## 2. Add a Git repo to your project
 
 1. Navigate to the **Repos** page in your project, hover your mouse over the name of your project and select the **Repos** icon. 
 ![](https://docs.microsoft.com/en-us/azure/devops/repos/git/media/repo-mgmt/select-project-repos.png?view=azure-devops)
@@ -58,3 +58,5 @@ Select visibility of either public or private. When you choose public visibility
 4. When you're happy with the repo name and choices, select **Create**.
 
 A new empty Git repo is now created in your project.
+
+## 3. 
