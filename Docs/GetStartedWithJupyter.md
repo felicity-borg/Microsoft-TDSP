@@ -11,7 +11,9 @@ This page will give you further links for detailed instructions on your role and
 ![](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/media/resources/DevGitJup.PNG) <br>
 *An overview of the tools used for this solution*
 
-
+1. Use Azure DevOps to create and manage your project. You can use this to break down your project into smaller tasks for e.g. 
+2. Create a git repo for your project to manage your code including using version control making it easy to track changes overtime and making it easier to resove conflicts in code. 
+3. Clone the git repo onto your directory on Azure Maching Learning shared workspace file system and use Jupyer notebooks to write your code. With your workspace now connected to your git repo you can `commit` (save) changes back to your git repo. If files are added to the git repo you can `pull` these changes onto your workspace making collaborating with colleagues easy. 
 
 ## 1. Create a project in Azure DevOps
 
