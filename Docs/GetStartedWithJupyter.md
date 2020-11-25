@@ -152,7 +152,7 @@ These actions can be controlled by Azure RBAC:
 * *Microsoft.MachineLearningServices/workspaces/computes/stop/action*
 * *Microsoft.MachineLearningServices/workspaces/computes/restart/action*
 
-### Collaborate on Jupyer Notebooks by adding contributor
+### Collaborate on Jupyer Notebooks by adding contributors
 
 * Navigate to your Azure Ml workspace on the Azure portal
 * Select **Access control (IAM)** on the left for your machine learning resource
