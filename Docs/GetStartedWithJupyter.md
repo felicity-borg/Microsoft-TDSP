@@ -11,11 +11,12 @@ This page will give you further links for detailed instructions on your role and
 ![](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/media/resources/DevGitJup.PNG) <br>
 *An overview of the tools used for this solution*
 
-1. Use Azure DevOps to create and manage your project. You can use this to break down your project into smaller tasks for e.g. ingest data, preprocess data, build features, etc.
-2. Create a git repo for your project to manage your code. Git is a distributed version control system. Git repositories can live locally (such as on a developer’s machine). Each developer has a copy of the source repository on their dev machine. Developers can commit each set of changes on their dev machine and perform version control operations such as history and compare without a network connection.  
-3. Launch an Azure Machine Learning (ML) workspace, and clone the git repo onto your directory in the workspace's shared workspace file system. Once cloned you can use Jupyter notebooks to write your code. With your workspace now connected to your git repo you can `commit` (save) changes and `push` them back to your git repo in Azure DevOps. If files are added to the git repo you and colleagues can `pull` these changes onto your workspace making collaborating with colleagues easy.
+1. [Azure DevOps](#AzureDevOps-1) Use Azure DevOps to create and manage your project. You can use this to break down your project into smaller tasks for e.g. ingest data, preprocess data, build features, etc.
 
-## 1. Create a project in Azure DevOps
+2. [Git Repository](#GitRepo-2) Create a git repo for your project to manage your code. Git is a distributed version control system. Git repositories can live locally (such as on a developer’s machine). Each developer has a copy of the source repository on their dev machine. Developers can commit each set of changes on their dev machine and perform version control operations such as history and compare without a network connection.  
+3. [Azure ML Notebooks](#Notebooks-3) Launch an Azure Machine Learning (ML) workspace, and clone the git repo onto your directory in the workspace's shared workspace file system. Once cloned you can use Jupyter notebooks to write your code. With your workspace now connected to your git repo you can `commit` (save) changes and `push` them back to your git repo in Azure DevOps. If files are added to the git repo you and colleagues can `pull` these changes onto your workspace making collaborating with colleagues easy.
+
+## 1. <a name='AzureDevOps-1'></a>Create a project in Azure DevOps
 
 ### Prerequisites
 * You need an organization before you can create a project. <br>
@@ -49,7 +50,7 @@ Select visibility of either public or private. When you choose public visibility
 * **Invite**: on the top right if you want to add others to your project. See [Add users to a project or team](https://docs.microsoft.com/en-us/azure/devops/organizations/security/add-users-team-project?view=azure-devops). You can only invite users who are already in your organization.
 
 
-## 2. Add a Git repo to your project
+## 2. <a name='GitRepo-2'></a>Add a Git repo to your project
 
 1. Navigate to the **Repos** page in your project, hover your mouse over the name of your project and select the **Repos** icon. 
 ![](https://docs.microsoft.com/en-us/azure/devops/repos/git/media/repo-mgmt/select-project-repos.png?view=azure-devops)
@@ -61,7 +62,7 @@ Select visibility of either public or private. When you choose public visibility
 
 A new empty Git repo is now created in your project.
 
-## 3. Run a notebook in your workspace
+## 3. <a name='Notebooks-3'></a>Run a notebook in your workspace
 
 For details on how to create and manage an Azure ML workspace click [here](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/azure-ml-workspace.md).
 
