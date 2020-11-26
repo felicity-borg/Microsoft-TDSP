@@ -134,26 +134,7 @@ To create a compute target:
 7. Name your compute for e.g., "TeamWkspc-com" and press **Enter** to create your compute.
 
 A file appears in VS Code with content similar to the one below:
-
-
-*json* <br>
-`{
-    "location": "westus2",
-    "tags": {},
-    "properties": {
-        "computeType": "AmlCompute",
-        "description": "",
-        "properties": {
-            "vmSize": "Standard_F2s_v2",
-            "vmPriority": "dedicated",
-            "scaleSettings": {
-                "maxNodeCount": 4,
-                "minNodeCount": 0,
-                "nodeIdleTimeBeforeScaleDown": "PT120S"
-            }
-        }
-    }
-}`
+![](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/media/resources/json-examples.PNG)
 
 8. When satisfied with the configuration, preess **Ctrl+Shift+P** to show the **Command Palette**.
 
