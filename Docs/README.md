@@ -1,4 +1,4 @@
-# Team Data Science Process Documentation
+# Documentation to help you learn data science tools and help you you execute a data science project in a systematic, version controlled, and collaborative way.
 
 How to use the Team Data Science Processs, an agile iterative data science metholdology for predictive analytics solutions and intelligent applications. 
 If you would like to set up the tools and frameworks for a larger project where a number of people will be contributing pages refer to **Roles and Tasks** followed by **Development** below. 
