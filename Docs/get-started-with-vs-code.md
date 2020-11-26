@@ -179,3 +179,49 @@ Azure Machine Learning provides a shared file system for all users in the worksp
 7. When prompted, log in to your Azure DevOps account.
 8. Once the cloning has completed, click **Open** to open the cloned repository. <br>
 ![](https://azuredevopslabs.com/labs/azuredevops/git/images/005_new.png)
+
+
+### Notes on working with Git commands on Visual Code
+#### Saving work with commits
+
+When you make changes to your files, Git will record the changes in the local repository. You can select the changes that you want to commit by staging the changes. Commits are always made against your local Git repository, so you don’t have to worry about the commit being perfect or ready to share with others. You can make more commits as you continue to work and push the changes to others when they are ready to be shared.
+
+What’s in a commit?
+
+Git commits consists of the following:
+
+* The file(s) changed in the commit. Git keeps the contents of all file changes in your repo in the commits. This keeps it fast and allows intelligent merging.
+
+* A reference to the parent commit(s). Git manages your code history using these references.
+
+* A message describing a commit. You give this message to Git when you create the commit. It’s a good idea to keep this message descriptive, but to the point.
+
+For more detailed examples see [Committing changes](https://azuredevopslabs.com/labs/azuredevops/git/#task-1-committing-changes), [Reviewing commits](https://azuredevopslabs.com/labs/azuredevops/git/#task-2-reviewing-commits) and [Staging commits](https://azuredevopslabs.com/labs/azuredevops/git/#task-3-staging-changes).
+
+#### Reviewing history
+
+Git uses the parent reference information stored in each commit to manage a full history of your development. You can easily review this commit history to find out when file changes were made and determine differences between versions of your code using the terminal or from one of the many Visual Studio Code extensions available. You can also review changes using the Azure DevOps portal.
+
+Git’s use of the **Branches and Merges** feature works through pull requests, so the commit history of your development doesn’t necessarily form a straight, chronological line. When you use history to compare versions, think in terms of file changes between two commits instead of file changes between two points in time. A recent change to a file in the master branch may have come from a commit created two weeks ago in a feature branch but was only merged yesterday.
+
+For more detailed examples on this see [Comparing files](https://azuredevopslabs.com/labs/azuredevops/git/#task-1-comparing-files).
+
+#### Working with branches
+
+You can manage the work in your Azure DevOps Git repo from the **Branches** view on the web. You can also customize the view to track the branches you care most about so you can stay on top of changes made by your team.
+
+Committing changes to a branch will not affect other branches and you can share branches with others without having to merge the changes into the main project. You can also create new branches to isolate changes for a feature or a bug fix from your master branch and other work. Since the branches are lightweight, switching between branches is quick and easy. Git does not create multiple copies of your source when working with branches, but rather uses the history information stored in commits to recreate the files on a branch when you start working on it. Your Git workflow should create and use branches for managing features and bugfixes. The rest of the Git workflow, such as sharing code and reviewing code with pull requests, all work through branches. Isolating work in branches makes it very simple to change what you are working on by simply changing your current branch.
+
+For more detailed examples on this see [Creating a new branch in your local repository](https://azuredevopslabs.com/labs/azuredevops/git/#task-1-creating-a-new-branch-in-your-local-repository) and [Working with branches](https://azuredevopslabs.com/labs/azuredevops/git/#task-2-working-with-branches). 
+
+#### Managing branches from Azure DevOps
+
+In addition to all the functionality available in Visual Studio Code, you can also manage your repo branches from the Azure DevOps portal.
+See [Creating a new branch](https://azuredevopslabs.com/labs/azuredevops/git/#task-1-creating-a-new-branch), [Deleting a branch](https://azuredevopslabs.com/labs/azuredevops/git/#task-2-deleting-a-branch), [Locking a branch](https://azuredevopslabs.com/labs/azuredevops/git/#task-3-locking-a-branch), and [Tagging a release](https://azuredevopslabs.com/labs/azuredevops/git/#task-4-tagging-a-release).
+
+
+
+
+
+
+
