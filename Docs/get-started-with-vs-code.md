@@ -80,3 +80,102 @@ A new empty Git repo is now created in your project.
 
 **Note**—Alternatively, you can install the Azure Machine Learning extension via the Visual Studio Marketplace by [downloading the installer directly](https://aka.ms/vscodetoolsforai).
 
+
+#### Sign into your Azure Account
+
+In order to provision resources and run workloads on Azure, you have to sign in with your Azure account credentials. To assist with account management, Azure Machine Learning automatically installs the Azure Account extension. Visit the following site to [learn more about the Azure Account extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account).
+
+1. Open the command palette by selecting **View > Command Palette** from the menu bar or pressing **Ctrl+Shift+P**. The Command Palette provides an easy and convenient way to access a wide variety of tasks, including those provided by 3rd party extensions.
+
+ 
+2. Enter the command "Azure: Sign In" into the commad palette to start the sign in process. 
+
+
+### Create a workspace
+
+The first thing you have to do to build an application in Azure Machine Learning is to create a workspace. A workspace contains the resources to train models as well as the trained models themselves. For more information, see [what is a workspace](https://docs.microsoft.com/en-us/azure/machine-learning/concept-workspace).
+
+1. On the Visual Studio Code activity bar, select the **Azure** icon to open the Azure Machine Learning view. 
+2. Right-click your Azure subscription and select **Create Workspace**.
+
+![](https://docs.microsoft.com/en-us/azure/machine-learning/media/tutorial-train-deploy-image-classification-model-vscode/create-workspace.png)
+
+3. By default a name is generated containing the date and time of creation. In the text input box, change the name to "TeamWorkspace" or something more sutitable and press **Enter**.
+
+4. Select **Create a new resource group**.
+
+5. Name your resource group for e.g. "TeamWokspace-rg" and press **Enter**.
+
+6. Choose a location for your workspace. It's recommended to choose a location that is closest to the location you plan to deploy you model. For example, "West US 2". 
+
+7. When prompted to select the type of workspace, choose **basic**.
+
+At this point, a request to Azure is made to create a new workspace in your account. After a few minutes, the new workspace appears in your subscription node.
+
+### Configure Compute Targets
+A compute target is the computing resource or environment where you run scripts and deploy trained models. For more information, see the [Azure Machine Learning compute targets documentation](https://docs.microsoft.com/en-us/azure/machine-learning/concept-compute-target).
+
+To create a compute target:
+
+1. On the Visual Studio Code activity bar, select the **Azure** icon. The Azure Machine Learning view appears.
+
+2. Expand your subscription node.
+
+3. Expand the **Workspace name** e.g., "TeamWorkspace" node.
+
+4. Under the workspace node, right-click the **Compute clusters** node and choose **Create Compute**.
+
+![](https://docs.microsoft.com/en-us/azure/machine-learning/media/tutorial-train-deploy-image-classification-model-vscode/create-compute.png)
+
+5. Select **Azure Machine Learning Compute (AmlCompute)**. Azure Machine Learning Compute is a managed-compute infrastructure that allows the user to easily create a single or multi-node compute that can be used with other users in your workspace.
+
+6. Choose a VM size. You can select **Standard_F2s_v2**  from the list of options. The size of your VM has an impact on the amount of time it takes to train your models. For more information on VM sizes, see [sizes for Linux virtual machines in Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/sizes).
+
+7. Name your compute for e.g., "TeamWkspc-com" and press **Enter** to create your compute.
+
+A file appears in VS Code with content similar to the one below:
+
+
+*json* <br>
+`{
+    "location": "westus2",
+    "tags": {},
+    "properties": {
+        "computeType": "AmlCompute",
+        "description": "",
+        "properties": {
+            "vmSize": "Standard_F2s_v2",
+            "vmPriority": "dedicated",
+            "scaleSettings": {
+                "maxNodeCount": 4,
+                "minNodeCount": 0,
+                "nodeIdleTimeBeforeScaleDown": "PT120S"
+            }
+        }
+    }
+}`
+
+8. When satisfied with the configuration, preess **Ctrl+Shift+P** to show the **Command Palette**.
+
+9. Enter the following command into the command palette to save your run configuration file.
+
+*text* <br>
+`Azure ML: Save and Continue`
+
+After a few minutes, the new compute target appears in the Compute clusters node of your workspace.
+
+
+### Clone Git repositories into your workspace file system
+
+Azure Machine Learning provides a shared file system for all users in the workspace. To clone a Git repository into this file share:
+1. Follow the instructions [here](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/gitIntegration.md) to copy the details needed to clone the Git repo. 
+2. Go back to your **Viusa Studio Code** instance. 
+3. Press **Ctrl+Shift+P** to show the **Command Palette**. 
+4. Execute the **Git: Clone command**. It may help to type **“Git”** to bring it to the shortlist. <br>
+![](https://azuredevopslabs.com/labs/azuredevops/git/images/003.png)
+5. Paste in the URL to your repo and press **Enter**. <br>
+![](https://azuredevopslabs.com/labs/azuredevops/git/images/004.png)
+6. Select a local path to clone the repo to—it is advised that you clone the repository into your users directory so that others will not make collisions directly on your working branch. An option is to clone it in your own 'users' directory. 
+7. When prompted, log in to your Azure DevOps account.
+8. Once the cloning has completed, click **Open** to open the cloned repository. <br>
+![](https://azuredevopslabs.com/labs/azuredevops/git/images/005_new.png)
