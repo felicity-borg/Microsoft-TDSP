@@ -29,7 +29,7 @@ Both can be used together to their strengths, e.g. complex code is writen as a m
   * [Option 1—Get Started with Visual Studio Code](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/get-started-with-vs-code.md)
   * [Option 2:1—Create a Machine Learning Workspace](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/azure-ml-workspace.md)
   * [Option 2:2—Get Started with Jupyter](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/GetStartedWithJupyter.md)
-  
+  * [Connect to data with the Azure Machine Learning studio](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/datastore-and-dataset.md)
 
 # What is the Team Data Science Process?
 
