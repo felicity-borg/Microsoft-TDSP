@@ -122,7 +122,7 @@ Azure Machine Learning provides a shared file system for all users in the worksp
 * Follow the instructions [here](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/gitIntegration.md) to copy the details needed to clone the Git repo. 
 * Go back to your Azure ML workspace
 * Open a terminal. Once the terminal is opened, you have access to a full Git client and can clone and work with Git via the Git CLI experience.
-* It is advised that you clone the repository into your users directory so that others will not make collisions directly on your working branch. To do this type cd <path to you user directory> e.g. `cd david`
+* It is advised that you clone the repository into your users directory so that others will not make collisions directly on your working branch. To do this type cd <path to user directory> e.g. `cd david`
 * Run git clone followed by the followed by the path copied from the Clone URL in the previous section, as shown in the following example. git clone https://dev.azure.com/fabrikam-fiber/MyFirstProject/_git/
 * Next it will ask for a password, paste the password shown when you cloned your git repo as shown [here](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/gitIntegration.md) and press Enter. <br>
 Git downloads a copy of the code, including all commits and branches from the repo, into a new folder for you to work with.
