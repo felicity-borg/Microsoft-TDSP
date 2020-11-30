@@ -3,8 +3,8 @@
 **Contents**: 
 1. [Manage and increase quotas for resources with Azure Machine Learning](#Quotas-1)
 2. [Understand workspace administration best practices](#WSAdmin-2)
-3. <a name='security-3'></a>Security best practices
-4. <a name = 'Integ-4'></a>Tools and integration best practices
+3. [Security best practices](#security-3)
+3. [Tools and integration best practices](#Integ-4)
 
 
 ##  1. <a name='Quotas-1'></a>Manage and increase quotas for resources with Azure Machine Learning
