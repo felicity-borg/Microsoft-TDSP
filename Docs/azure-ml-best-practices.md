@@ -198,6 +198,33 @@ Key [Azure limits](https://docs.microsoft.com/en-us/azure/azure-subscription-ser
 * Resource groups per subscription: **980**
 * These limits are at this point in time and might change going forward. Some of them can also be increased if needed. For more help in understanding the impact of these limits or options of increasing them, please contact Microsoft or Databricks technical architects.
 
+### Networking
+When creating a workspace the default network configuration is to use a **Public endpoint**, which is accessible on the public internet. To limit access to your workspace to an Azure Virtual Network you have created, you can instead select **Private endpoint** (preview) as the **Connectivity method**, and then use **+ Add** to configure the endpoint.
+![](https://docs.microsoft.com/en-us/azure/machine-learning/media/how-to-manage-workspace/select-private-endpoint.png)
+
+On the **Create private endpoint** form, set the location, name, and virtual network to use. If you'd like to use the endpoint with a Private DNS Zone, select **Integrate with private DNS** zone and select the zone using the **Private DNS Zone field**. Select **OK** to create the endpoint.
+![](https://docs.microsoft.com/en-us/azure/machine-learning/media/how-to-manage-workspace/create-private-endpoint.png)
+
+When you are finished configuring networking, you can select **Review + Create**, or advance to the optional **Advanced** configuration.
+**Important**: Using a private endpoint with Azure Machine Learning workspace is currently in public preview. This preview is provided without a service level agreement, and it's not recommended for production workloads. Certain features might not be supported or might have constrained capabilities. For more information, see Supplemental Terms of Use for Microsoft Azure Previews.
+
+### Multiple workspaces with private endpoint
+When you create a private endpoint, a new Private DNS Zone named **privatelink.api.azureml.ms** is created. This contains a link to the virtual network. If you create multiple workspaces with private endpoints in the same resource group, only the virtual network for the first private endpoint may be added to the DNS zone. To add entries for the virtual networks used by the additional workspaces/private endpoints, use the following steps:
+
+1. In the Azure portal, select the resource group that contains the workspace. Then select the Private DNS Zone resource named **privatelink.api.azureml.ms**
+2. In the **Settings**, select **Virtual network links**.
+3. Select **Add**. From the **Add virtual network link** page, provide a unique **Link name**, and then select the **Virtual network** to be added. Select **OK** to add the network link.
+For more information, see [Azure Private Endpoint DNS configuration](https://docs.microsoft.com/en-us/azure/private-link/private-endpoint-dns).
+
+### Vulnerability scanning
+Azure Security Center provides unified security management and advanced threat protection across hybrid cloud workloads. You should allow Azure Security Center to scan your resources and follow its recommendations. For more, see [Azure Container Registry image scanning by Security Center](https://docs.microsoft.com/en-us/azure/security-center/defender-for-container-registries-introduction) and [Azure Kubernetes Services integration with Security Center](https://docs.microsoft.com/en-us/azure/security-center/defender-for-kubernetes-introduction).
+
+### Download a configuration file
+If you will be creating a [compute instance](https://docs.microsoft.com/en-us/azure/machine-learning/tutorial-1st-experiment-sdk-setup#azure), skip this step. The compute instance has already created a copy of this file for you.
+![](https://docs.microsoft.com/en-us/azure/machine-learning/media/how-to-manage-workspace/configure.png)
+
+Place the file into the directory structure with your Python scripts or Jupyter Notebooks. It can be in the same directory, a subdirectory named *.azureml*, or in a parent directory. When you create a compute instance, this file is added to the correct directory on the VM for you.
+
 ##  3. <a name='security-3'></a>Security best practices
 
 Security and infrastructure configuration go hand-in-hand. When you set up your Azure ML service workspace(s) and related services, you need to make sure that security considerations do not take a back seat during the architecture design. 
