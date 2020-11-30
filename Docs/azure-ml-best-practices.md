@@ -1,4 +1,15 @@
 # Describe Azure ML Service best practices
+## Understand workspace administration best practices
+
+## Azure sunscription limits
+
+Key [Azure limits](https://docs.microsoft.com/en-us/azure/azure-subscription-service-limits) are:
+
+* Storage accounts per region per subscription: **250**
+* Maximum egress for general-purpose v2 and Blob storage accounts (all regions): **50 Gbps**
+* Virtual Machines (VMs) per subscription per region: **25,000**
+* Resource groups per subscription: **980**
+* These limits are at this point in time and might change going forward. Some of them can also be increased if needed. For more help in understanding the impact of these limits or options of increasing them, please contact Microsoft or Databricks technical architects.
 
 ## Manage and increase quotas for resources with Azure Machine Learning
 
@@ -172,3 +183,31 @@ To request an allowance for these scenarios, use the following steps:
 3. Select **Create* to create the request. 
 
 ![](https://docs.microsoft.com/en-gb/azure/machine-learning/media/how-to-manage-quotas/quota-increase-private-endpoint.png)
+
+### Additional considerations
+* Create different workspaces by different department / business team / data tier, and per environment (development, staging, and production) - across relevant Azure subscriptions
+* Define workspace level tags which propagate to initially provisioned resources in managed resource group (Tags could also propagate from parent resource group)
+* Use Azure [Resource Manager templates templates](https://github.com/Azure/azure-quickstart-templates( to have a more managed way of deploying the workspaces - whether via CLI, PowerShell, or some SDK
+* Create relevant groups of users - using [Group REST API](https://docs.azuredatabricks.net/api/latest/groups.html) or by using [Azure Active Directory Group Sync with SCIM](https://docs.azuredatabricks.net/administration-guide/admin-settings/scim/index.html)/
+
+## Security best practices
+
+Security and infrastructure configuration go hand-in-hand. When you set up your Azure ML service workspace(s) and related services, you need to make sure that security considerations do not take a back seat during the architecture design. 
+
+### Always hide secrets in a key vault
+It is a significant security risk to expose sensitive data such as access credentials openly in Notebooks or other places such as job configs, initialization scripts, etc. You should always use a vault to securely store and access them. Unless you are using azure Databricks (ADB) workspace in which case you can use ADB's internal Key Vault for this purpose, use Azure's Key Vault (AKV) service.
+
+If using Azure Key Vault, create separate AKV-backed secret scopes and corresponding AKVs to store credentials pertaining to different data stores. This will help prevent users from accessing credentials that they might not have access to. Since access controls are applicable to the entire secret scope, users with access to the scope will see all secrets for the AKV associated with that scope.
+
+More Information can be found in the following urls:
+
+[Create an Azure Key Vault-backed secret scope](https://docs.azuredatabricks.net/user-guide/secrets/secret-scopes.html)
+
+[Example of using a secret in a notebook](https://docs.azuredatabricks.net/user-guide/secrets/example-secret-workflow.html)
+
+[Best practices for creating secret scopes](https://docs.azuredatabricks.net/user-guide/secrets/secret-acl.html)
+
+### Additional considerations
+Configure encryption-at-rest for [Blob Storage](https://docs.microsoft.com/en-us/azure/storage/common/storage-service-encryption-customer-managed-keys) and [ADLS](https://docs.microsoft.com/en-us/azure/data-lake-store/data-lake-store-encryption), preferably by using customer-managed keys in Azure Key Vault.
+
+
