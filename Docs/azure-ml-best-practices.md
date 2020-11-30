@@ -1,17 +1,13 @@
 # Describe Azure ML Service best practices
-## Understand workspace administration best practices
 
-## Azure sunscription limits
+**Contents**: 
+1. [Manage and increase quotas for resources with Azure Machine Learning](#Quotas-1)
+2. [Understand workspace administration best practices](#WSAdmin-2)
+3. <a name='security-3'></a>Security best practices
+4. <a name = 'Integ-4'></a>Tools and integration best practices
 
-Key [Azure limits](https://docs.microsoft.com/en-us/azure/azure-subscription-service-limits) are:
 
-* Storage accounts per region per subscription: **250**
-* Maximum egress for general-purpose v2 and Blob storage accounts (all regions): **50 Gbps**
-* Virtual Machines (VMs) per subscription per region: **25,000**
-* Resource groups per subscription: **980**
-* These limits are at this point in time and might change going forward. Some of them can also be increased if needed. For more help in understanding the impact of these limits or options of increasing them, please contact Microsoft or Databricks technical architects.
-
-## Manage and increase quotas for resources with Azure Machine Learning
+##  1. <a name='Quotas-1'></a>Manage and increase quotas for resources with Azure Machine Learning
 
 Azure uses limits and quotas to prevent budget overruns due to fraud, and to honor Azure capacity constraints. Consider these limits as you scale for production workloads.
 This section will cover:
@@ -23,7 +19,7 @@ This section will cover:
 
 Along with managing quotas, you can learn how to [plan and manage costs for Azure Machine Learning](https://docs.microsoft.com/en-gb/azure/machine-learning/concept-plan-manage-cost).
 
-### Special Considerations:
+#### Special Considerations:
 
 * A quota is a credit limit, not a capacity guarantee. If you have large-scale capacity needs, [contact Azure support to increase your quota](https://docs.microsoft.com/en-gb/azure/machine-learning/how-to-manage-quotas#request-quota-increases).
 
@@ -33,7 +29,7 @@ Azure Machine Learning compute is an exception. It has a separate quota from the
 
 * Default limits vary by offer category type, such as free trial, pay-as-you-go, and virtual machine (VM) series (such as Dv2, F, and G).
 
-### Default resource quotas
+#### Default resource quotas
 In this section, you learn about the default and maximum quota limits for the following resources:
 
 * Virtual machines
@@ -66,7 +62,7 @@ You can't raise limits for virtual machines above the values shown in the follow
 
 <sup>2</sup> If you reach the limit of 800 deployments, delete deployments that are no longer needed from the history. To delete subscription-level deployments, use [Remove-AzDeployment](https://docs.microsoft.com/en-us/powershell/module/az.resources/Remove-AzDeployment) or [az deployment sub delete](https://docs.microsoft.com/en-us/cli/azure/deployment/sub#az-deployment-sub-delete).
 
-#### Azure Machine Learning Compute 
+##### Azure Machine Learning Compute 
 
 [Azure Machine Learning compute](https://docs.microsoft.com/en-gb/azure/machine-learning/concept-compute-target#azure-machine-learning-compute-managed) has a default quota limit on both the number of cores and the number of unique compute resources allowed per region in a subscription. This quota is separate from the VM core quota from the previous section.
 
@@ -94,7 +90,7 @@ The following table shows additional limits that you can't exceed.
 
 <sup>1</sup> Maximum lifetime is the duration between when a run starts and when it finishes. Completed runs persist indefinitely. Data for runs not completed within the maximum lifetime is not accessible. <sup>2</sup> Jobs on a low-priority node can be preempted whenever there's a capacity constraint. We recommend that you implement checkpoints in your job.
 
-#### Azure Machone Learning Pipelines
+##### Azure Machone Learning Pipelines
 
 [Azure Machine Learning Pipelines](https://docs.microsoft.com/en-gb/azure/machine-learning/concept-ml-pipelines) have the following limits. 
 
@@ -103,15 +99,15 @@ The following table shows additional limits that you can't exceed.
 | Step in a pipeline | 30,000 |
 | Workspaces per resource group | 800 |
 
-#### Container Instances
+##### Container Instances
 For more information, see [Container Instances limits](https://docs.microsoft.com/en-gb/azure/azure-resource-manager/management/azure-subscription-service-limits#container-instances-limits).
 
-#### Storage
+##### Storage
 Azure Storage has a limit of 250 storage accounts per region, per subscription. This limit includes both Standard and Premium storage accounts.
 
 To increase the limit, make a request through [Azure Support](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest/). 
 
-##### Workspace-level quotas
+###### Workspace-level quotas
 
 Workspace-level quotas
 Use workspace-level quotas to manage Azure Machine Learning compute target allocation between multiple [workspaces](https://docs.microsoft.com/en-gb/azure/machine-learning/concept-workspace) in the same subscription.
@@ -129,7 +125,7 @@ You can't set a negative value or a value higher than the subscription-level quo
 
 **Note** You need a subscription-level permissions to set a quote at the workspace level. 
 
-##### View your usage and quotas
+###### View your usage and quotas
 To view your quota for various Azure resources like virtual machines, storage, or network, use the Azure portal:
 
 1. On the left pane, select **All services** and then select **Subscriptions** under the **General** category.
@@ -190,7 +186,19 @@ To request an allowance for these scenarios, use the following steps:
 * Use Azure [Resource Manager templates templates](https://github.com/Azure/azure-quickstart-templates( to have a more managed way of deploying the workspaces - whether via CLI, PowerShell, or some SDK
 * Create relevant groups of users - using [Group REST API](https://docs.azuredatabricks.net/api/latest/groups.html) or by using [Azure Active Directory Group Sync with SCIM](https://docs.azuredatabricks.net/administration-guide/admin-settings/scim/index.html)/
 
-## Security best practices
+##  2. <a name='WSAdmin-2'></a>Understand workspace administration best practices
+
+### Azure subscription limits
+
+Key [Azure limits](https://docs.microsoft.com/en-us/azure/azure-subscription-service-limits) are:
+
+* Storage accounts per region per subscription: **250**
+* Maximum egress for general-purpose v2 and Blob storage accounts (all regions): **50 Gbps**
+* Virtual Machines (VMs) per subscription per region: **25,000**
+* Resource groups per subscription: **980**
+* These limits are at this point in time and might change going forward. Some of them can also be increased if needed. For more help in understanding the impact of these limits or options of increasing them, please contact Microsoft or Databricks technical architects.
+
+##  3. <a name='security-3'></a>Security best practices
 
 Security and infrastructure configuration go hand-in-hand. When you set up your Azure ML service workspace(s) and related services, you need to make sure that security considerations do not take a back seat during the architecture design. 
 
@@ -210,4 +218,7 @@ More Information can be found in the following urls:
 ### Additional considerations
 Configure encryption-at-rest for [Blob Storage](https://docs.microsoft.com/en-us/azure/storage/common/storage-service-encryption-customer-managed-keys) and [ADLS](https://docs.microsoft.com/en-us/azure/data-lake-store/data-lake-store-encryption), preferably by using customer-managed keys in Azure Key Vault.
 
+## 4. <a name = 'Integ-4'></a>Tools and integration best practices
 
+* Use [Azure Data Factory](https://docs.azuredatabricks.net/user-guide/dev-tools/data-pipelines.html#azure-data-factory) to orchestrate pipelines / workflows (or something like [Airflow](https://docs.azuredatabricks.net/user-guide/dev-tools/data-pipelines.html#apache-airflow)).
+* Sync notebooks with [Azure DevOps](https://docs.azuredatabricks.net/user-guide/notebooks/azure-devops-services-version-control.html) for seamless version control. For detailed information refer to his [page](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/agile-development.md).
