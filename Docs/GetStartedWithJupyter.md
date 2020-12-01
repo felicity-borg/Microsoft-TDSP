@@ -8,7 +8,8 @@ If you would like to use these tools for a substantial project within a larger t
 This page will give you further links for detailed instructions on your role and how to get started with your project. Details covered include how to [get started with Azure DevOps](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/agile-development.md), [creating a project repository](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/group-manager-tasks.md) and [setting up security control—adding project members and configuring permissions](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/project-lead-tasks.md). 
 
 
-![](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/media/resources/DevGitJup.PNG) <br>
+![](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/media/resources/DevGitJup.PNG?raw=true.) 
+
 *An overview of the tools used for this solution*
 
 1. [Azure DevOps](#AzureDevOps-1) Use Azure DevOps to create and manage your project. You can use this to break down your project into smaller tasks for e.g. ingest data, preprocess data, build features, etc.
@@ -19,11 +20,15 @@ This page will give you further links for detailed instructions on your role and
 ## 1. <a name='AzureDevOps-1'></a>Create a project in Azure DevOps
 
 ### Prerequisites
-* You need an organization before you can create a project. <br>
-If you haven't created an organization yet, create one by following the instructions in [Sign up, sign in to Azure DevOps, which also creates a project](https://docs.microsoft.com/en-us/azure/devops/user-guide/sign-up-invite-teammates?view=azure-devops). <br>
+* You need an organization before you can create a project. 
+
+If you haven't created an organization yet, create one by following the instructions in [Sign up, sign in to Azure DevOps, which also creates a project](https://docs.microsoft.com/en-us/azure/devops/user-guide/sign-up-invite-teammates?view=azure-devops). 
+
 Or see [Create an organization or project collection](https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/create-organization?view=azure-devops). 
-If you have a Microsoft account follow the instructions fot the heading **Sign up with a personal Microsoft account** [here](https://docs.microsoft.com/en-us/azure/devops/user-guide/sign-up-invite-teammates?view=azure-devops) and then refer back to this documentation. <br>
-If you are going to sign up with a newly created Microsoft account (MWS), your project is automatically created and named based on your sign-in. <br>
+If you have a Microsoft account follow the instructions fot the heading **Sign up with a personal Microsoft account** [here](https://docs.microsoft.com/en-us/azure/devops/user-guide/sign-up-invite-teammates?view=azure-devops) and then refer back to this documentation. 
+
+If you are going to sign up with a newly created Microsoft account (MWS), your project is automatically created and named based on your sign-in. 
+
 * To create a new project you must be a member of the Project Collection Administrators group or have the **Create new projects** permission set to **Allow**. If you're the Organization Owner, you're automatically added to the Project Collection Administrators group. If you aren't a member, get added before following this documentation. For more information, see [Set permissions at the project- or collection-level](https://docs.microsoft.com/en-us/azure/devops/organizations/security/set-project-collection-level-permissions?view=azure-devops).
 
 
@@ -74,7 +79,8 @@ To create a new notebook:
 
 1. Open your workspace in [Azure Machine Learning studio](https://ml.azure.com/).
 2. On the left side, select **Notebooks**.
-3. Select the **Create new file** icon above the list **User files** in the **My files** section. <br>
+3. Select the **Create new file** icon above the list **User files** in the **My files** section. 
+
 ![](https://docs.microsoft.com/en-us/azure/machine-learning/media/how-to-run-jupyter-notebooks/create-new-file.png)
 
 4. Name the file.
@@ -90,13 +96,16 @@ You can create text files as well. Select **Text** as the file type and add the 
 You can also upload folders and files, including notebooks, with the tools at the top of the Notebooks page. Notebooks and most text file types display in the preview section. No preview is available for most other file types.
 
 ### Create a compute instance
-1. In your workspace in Azure Machine Learning studio, select **Compute**, then select **Compute Instance** on the top. <br>
+1. In your workspace in Azure Machine Learning studio, select **Compute**, then select **Compute Instance** on the top. 
+
 ![](hhttps://docs.microsoft.com/en-us/azure/machine-learning/media/how-to-create-attach-studio/create-compute-target.png)
 
-2. If you see a list of compute resources, select **+New** above the list. <br>
+2. If you see a list of compute resources, select **+New** above the list. 
+
 ![](https://docs.microsoft.com/en-us/azure/machine-learning/media/how-to-create-attach-studio/select-new.png)
 
-3. Fill out the form for your compute instance <br>
+3. Fill out the form for your compute instance 
+
 ![](https://docs.microsoft.com/en-us/azure/machine-learning/media/concept-compute-instance/create-compute-instance.png)
 
 | **Field** | **Description** |
@@ -125,7 +134,8 @@ Azure Machine Learning provides a shared file system for all users in the worksp
 * Open a terminal. Once the terminal is opened, you have access to a full Git client and can clone and work with Git via the Git CLI experience.
 * It is advised that you clone the repository into your users directory so that others will not make collisions directly on your working branch. To do this type cd <path to user directory> e.g. `cd david`
 * Run git clone followed by the followed by the path copied from the Clone URL in the previous section, as shown in the following example. git clone https://dev.azure.com/fabrikam-fiber/MyFirstProject/_git/
-* Next it will ask for a password, paste the password shown when you cloned your git repo as shown [here](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/gitIntegration.md) and press Enter. <br>
+* Next it will ask for a password, paste the password shown when you cloned your git repo as shown [here](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/gitIntegration.md) and press Enter. 
+
 Git downloads a copy of the code, including all commits and branches from the repo, into a new folder for you to work with.
 
 Switch your directory to the repository that you cloned. For e.g.
