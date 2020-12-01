@@ -1,20 +1,3 @@
-<properties
-	pageTitle="Tasks for the team lead on a Team Data Science Process team"
-	description="Outlines the tasks that a Team Lead is expected to complete for the data science team."  
-	services="machine-learning"
-	documentationCenter=""
-	authors="bradsev"
-	manager="jhubbard"
-	editor="cgronlun" />
-
-<tags
-	ms.service="machine-learning"
-	ms.workload="data-services"
-	ms.tgt_pltfrm="na"
-	ms.devlang="na"
-	ms.topic="article"
-	ms.date="09/20/2016"
-	ms.author="bradsev;hangzh;"/>
 
 # Tasks for the team lead on a Team Data Science Process team
 
