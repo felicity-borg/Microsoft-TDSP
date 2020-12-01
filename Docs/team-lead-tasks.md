@@ -221,9 +221,12 @@ First ensure that you have Azure CLI insitalled. For instructions on installing 
 
 * On a Linux machine, run the script from the Linux shell:
 
-`wget "https://raw.githubusercontent.com/Azure/`
+`wget "https://raw.githubusercontent.com/Azure' 
+
 `Azure-MachineLearning-DataScience/master/Misc/`
+
 `TDSP/AttachFileShare.sh"`
+
 `bash AttachFileShare.sh`
 
 2. Press Enter or enter `Y` to continue, if you saved an Azure file storage information file in the previous step. Enter the complete path and name of the file you created.
