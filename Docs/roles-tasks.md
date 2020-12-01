@@ -1,21 +1,3 @@
- <properties
-	pageTitle="Data Science Process: components, roles and tasks"
-	description="An outline of the key components, personel roles, and associated tasks for a data science team."  
-	services="machine-learning"
-	documentationCenter=""
-	authors="bradsev"
-	manager="jhubbard"
-	editor="cgronlun" />
-
-<tags
-	ms.service="machine-learning"
-	ms.workload="data-services"
-	ms.tgt_pltfrm="na"
-	ms.devlang="na"
-	ms.topic="article"
-	ms.date="09/20/2016"
-	ms.author="bradsev;hangzh;"/>
-
 # Data Science Process: Roles and tasks
 
 This document outlines the key personnel roles and associated tasks for a data science team.
@@ -57,10 +39,15 @@ The following diagram shows the top-level tasks for each Team Data Science Proce
 The following tasks are completed by the Group Manager (or a designated TDSP system administrator) to adopt the TDSP:
 
 * Creates an Azure DevOps **organization** and a group project within the organization.
+
 * Creates a **project template repository** in the Azure DevOps group project, and seeds it from the project template repository developed by the Microsoft TDSP team. The Microsoft TDSP project template repository provides:
+
 	* A **standardized directory structure**, including directories for data, code, and documents.
+
 	* A set of **standardized document templates** to guide an efficient data science process.
+
 * Creates a **utility repository**, and seeds it from the utility repository developed by the Microsoft TDSP team. The TDSP utility repository from Microsoft provides a set of useful utilities to make the work of a data scientist more efficient. The Microsoft utility repository includes utilities for interactive data exploration, analysis, reporting, and baseline modeling and reporting.
+
 * Sets up the **security control policy** for the organization account.
 
 For detailed step-by-step instructions, see [Group Manager tasks for a data science team](group-manager-tasks.md). 
@@ -71,9 +58,13 @@ For detailed step-by-step instructions, see [Group Manager tasks for a data scie
 The Team Lead or a designated project administrator completes the following tasks to adopt the TDSP:
 
 * Creates a team **project** in the group's Azure DevOps organization.
+
 * Creates the **project template repository** in the project, and seeds it from the group project template repository set up by the Group Manager or delegate.
+
 * Creates the **team utility repository**, seeds it from the group utility repository, and adds team-specific utilities to the repository.
+
 * Optionally creates Azure file storage to store useful data assets for the team. Other team members can mount this shared cloud file store on their analytics desktops.
+
 * Sets up **security control** by adding team members and configuring their permissions. 
 
 For detailed step-by-step instructions, see [Team Lead tasks for a data science team](team-lead-tasks.md).  
@@ -84,7 +75,9 @@ For detailed step-by-step instructions, see [Team Lead tasks for a data science 
 The Project Lead completes the following tasks to adopt the TDSP:
 
 * Creates a **project repository** in the team project, and seeds it from the project template repository.
+
 * Optionally creates Azure file storage to store the project's data assets.
+
 * Sets up **security control** by adding project members and configuring their permissions.
 
 For detailed step-by-step instructions, see [Project Lead tasks for a data science team](project-lead-tasks.md). 
@@ -94,6 +87,7 @@ For detailed step-by-step instructions, see [Project Lead tasks for a data scien
 The Project Individual Contributor, usually a Data Scientist, conducts the following tasks using the TDSP:
 
 * Clones the project repository set up by the project lead.
+
 * Executes the project. 
 
 For detailed step-by-step instructions for onboarding onto a project, see [Project Individual Contributors for a data science team](project-ic-tasks.md). 
@@ -110,7 +104,9 @@ The following figure outlines the TDSP workflow for project execution:
 The workflow steps can be grouped into three activities:
 
 * Project Leads conduct sprint planning
+
 * Data Scientists develop artifacts on `git` branches to address work items
+
 * Project Leads or other team members do code reviews and merge working branches to the primary branch
 
 For detailed step-by-step instructions on project execution workflow, see [Execution of data science projects](agile-development.md).
