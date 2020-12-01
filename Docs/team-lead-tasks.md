@@ -205,7 +205,7 @@ First ensure that you have Azure CLI insitalled. For instructions on installing 
 
 3. Select the storage account to use, or create a new one under your selected subscription. You can use lowercase characters, numbers, and hyphens for the Azure file storage name.
 
-4. To facilitate mounting and sharing the storage, press Enter or enter `Y` to save the Azure file storage information into a text file in your current directory. You can check in this text file to your **TeamTemplate** repository, ideally under **Docs\DataDictionaries**, so all projects in your team can access it. You also need the file information to mount your Azure file storage in the next section.
+4. To facilitate mounting and sharing the storage, press Enter or enter `Y` to save the Azure file storage information into a text file in your current directory. You can check in this text file to your **TeamTemplate** repository, ideally under **Docs/DataDictionaries**, so all projects in your team can access it. You also need the file information to mount your Azure file storage in the next section.
 
 ## Mount Azure file storage on your local machine
 
