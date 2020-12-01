@@ -95,6 +95,7 @@ The team project **Summary** page opens, with page URL containing the following 
 ## Create the TeamTemplate repository
 
 1. On the **Project Settings** page, select **New repository**. 
+
 ![](https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/media/team-lead-tasks/team-leads-9-create-team-utilities.png)
 
 Or, select **Repos** from the left navigation of the **MyTeam** project **Summary** page, select a repository at the top of the page, and then select **New repository** from the dropdown.
@@ -144,6 +145,7 @@ To modify, upload, or create files or folders directly in Azure DevOps:
 ![](https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/media/team-lead-tasks/new-file.png)
 
 * To upload files, select **Upload file(s)**.
+
 ![](https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/media/team-lead-tasks/upload-files.png)
 
 * To edit existing files, navigate to the file and then select **Edit**.
@@ -209,7 +211,7 @@ First ensure that you have Azure CLI insitalled. For instructions on installing 
 
 ## Mount Azure file storage on your local machine
 
-1. To mount your Azure file storage to your local machie when using Windows, use the following script.
+ To mount your Azure file storage to your local machine when using Windows, use the following script.
 
 `wget "https://raw.githubusercontent.com/Azure/Azure-MachineLearning-DataScience/master/Misc/TDSP/AttachFileShare.ps1" -outfile "AttachFileShare.ps1"
 .\AttachFileShare.ps1`
@@ -219,11 +221,11 @@ First ensure that you have Azure CLI insitalled. For instructions on installing 
 `wget "https://raw.githubusercontent.com/Azure/Azure-MachineLearning-DataScience/master/Misc/TDSP/AttachFileShare.sh"
 bash AttachFileShare.sh`
 
-2. Press Enter or enter `Y` to continue, if you saved an Azure file storage information file in the previous step. Enter the complete path and name of the file you created.
+Press Enter or enter `Y` to continue, if you saved an Azure file storage information file in the previous step. Enter the complete path and name of the file you created.
 
 If you don't have an Azure file storage information file, enter `n`, and follow the instructions to enter your subscription, Azure storage account, and Azure file storage information.
 
-3. Enter the name of a local or TDSP drive to mount the file share on. The screen displays a list of existing drive names. Provide a drive name that doesn't already exist.
+Enter the name of a local or TDSP drive to mount the file share on. The screen displays a list of existing drive names. Provide a drive name that doesn't already exist.
 
 Confirm that the new drive and storage is successfully mounted on your machine.
 
