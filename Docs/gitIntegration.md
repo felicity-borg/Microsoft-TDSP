@@ -32,7 +32,7 @@ Git downloads a copy of the code, including all commits and branches from the re
 
 An exampe of how working with Git to save work with `commit` and sharing code with `push`. 
 
-1. Navigate to one of the Jupyter Lab notebooks containing code and make some changes 'for e.g. add a comment `#testing my first edit`in one of the cells
+1. Navigate to one of the Jupyter Lab notebooks containing code and make some changes 'for e.g. add a comment `#testing my first edit` in one of the cells
 
 2. Navigate back to the terminal and ensure you are still in the directory of the repository you cloned. 
 
