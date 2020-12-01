@@ -3,17 +3,19 @@
 To integrate code in Jupyterlab notebooks in GIT the recommended approach by Microsoft is to use a GIT command-line. 
 The steps requrd to do this is shown and documented below. For more details on the Git command-line refer [here](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/createRepo.md) page. 
 
-![](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/media/resources/git-integration.PNG)
+![](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/media/resources/git-integration.PNG?raw=true)
 *Process used to integrate the code in GIT*
 
 **GIT Clone—clone the repo to your Azure ML JupyterLab**
 To work with a Git repo, you need to clone the repo you will be working on for this project to your computer. Cloning a repo creates a complete local copy of the repo for you to work with, and downloads all commits and branches in the repo and sets up a named relationship with the repo on the server. Use this relationship to interact with the existing repo, pushing and pulling changes to share code with your team.
 
 1. From your web browser, open the team project for your organization in Azure DevOps and select **Repos > Files**. If you don't have a team project, create one now.
-For details on how to create a Git repo for your project click [here](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/createRepo.md).<br>
+For details on how to create a Git repo for your project click [here](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/createRepo.md).
+
 ![](https://docs.microsoft.com/en-us/azure/devops/repos/get-started/media/clone-repo/repos-files.png?view=azure-devops)
 
-2. Select **Clone** in the upper-right corner of the **Files** window and copy the clone URL; and password—you will need both in the following step. <br>
+2. Select **Clone** in the upper-right corner of the **Files** window and copy the clone URL; and password—you will need both in the following step. 
+
 ![](https://docs.microsoft.com/en-us/azure/devops/repos/get-started/media/clone-repo/clone-repo.png?view=azure-devops)
 
 3. Access Azure ML JupyterLab and open a terminal Session. Run `git clone` followed by the followed by the path copied from the Clone URL in the previous section, as shown in the following example.
