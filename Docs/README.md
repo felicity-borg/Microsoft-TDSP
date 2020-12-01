@@ -72,6 +72,7 @@ The goals, tasks, and documentation artifacts for each stage of the lifecycle in
 * Data scientist
 * Application developer
 * Project lead
+
 The following diagram provides a grid view of the tasks (in blue) and artifacts (in green) associated with each stage of the lifecycle (on the horizontal axis) for these roles (on the vertical axis).
 
 ![](https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/media/overview/tdsp-tasks-by-roles.png)
