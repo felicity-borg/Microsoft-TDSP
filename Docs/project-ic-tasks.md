@@ -1,21 +1,3 @@
-<properties
-	pageTitle="Tasks for an individual contributor in the Team Data Science Process"
-	description="Outlines the tasks that an individual contributor on a data science team is expected to complete."  
-	services="machine-learning"
-	documentationCenter=""
-	authors="bradsev"
-	manager="jhubbard"
-	editor="cgronlun" />
-
-<tags
-	ms.service="machine-learning"
-	ms.workload="data-services"
-	ms.tgt_pltfrm="na"
-	ms.devlang="na"
-	ms.topic="article"
-	ms.date="09/21/2016"
-	ms.author="bradsev;hangzh;"/>
-
 
 # Tasks for an individual contributor in the Team Data Science Process
 
