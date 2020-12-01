@@ -214,15 +214,13 @@ First ensure that you have Azure CLI insitalled. For instructions on installing 
 ## Mount Azure file storage on your local machine
 
  1. To mount your Azure file storage to your local machine when using Windows, use the following script.
-
-`wget "https://raw.githubusercontent.com/Azure/`
+ `wget "https://raw.githubusercontent.com/Azure/`
 `Azure-MachineLearning-DataScience/master/Misc/TDSP/`
 `AttachFileShare.ps1" -outfile "AttachFileShare.ps1"`
 
 `.\AttachFileShare.ps1`
 
 * On a Linux machine, run the script from the Linux shell:
-
 `wget "https://raw.githubusercontent.com/Azure/`
 `Azure-MachineLearning-DataScience/master/Misc/TDSP/`
 `AttachFileShare.sh"`
@@ -235,7 +233,7 @@ If you don't have an Azure file storage information file, enter `n`, and follow 
 
 3. Enter the name of a local or TDSP drive to mount the file share on. The screen displays a list of existing drive names. Provide a drive name that doesn't already exist.
 
-4. Confirm that the new drive and storage is successfully mounted on your machine.
+4.Confirm that the new drive and storage is successfully mounted on your machine.
 
  To connect to storage services on Azure via Azure Machine Learning datastores see [here](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-access-data).
 
