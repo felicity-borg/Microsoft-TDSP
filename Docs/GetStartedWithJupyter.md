@@ -58,11 +58,15 @@ Select visibility of either public or private. When you choose public visibility
 ## 2. <a name='GitRepo-2'></a>Add a Git repo to your project
 
 1. Navigate to the **Repos** page in your project, hover your mouse over the name of your project and select the **Repos** icon. 
+
 ![](https://docs.microsoft.com/en-us/azure/devops/repos/git/media/repo-mgmt/select-project-repos.png?view=azure-devops)
+
 2. From the repo drow-down, select **New repository**.
 ![](https://docs.microsoft.com/en-us/azure/devops/repos/git/media/repo-mgmt/new-repository.png?view=azure-devops)
+
 3. In the **Create a new repository** dialog, verify that Git is the repo type and enter a name for your new repo. You can also choose to add a README and create a .gitignore for the type of code you plan to manage in the repo. A README contains information about the code in your repo, and a .gitignore file tells Git which types of files to ignore, such as temporary build files from your development environment.
 ![](https://docs.microsoft.com/en-us/azure/devops/repos/git/media/repo-mgmt/create-a-new-repository.png?view=azure-devops)
+
 4. When you're happy with the repo name and choices, select **Create**.
 
 A new empty Git repo is now created in your project.
@@ -78,7 +82,9 @@ In your Azure Machine Learning workspace, create a new Jupyter notebook and star
 To create a new notebook:
 
 1. Open your workspace in [Azure Machine Learning studio](https://ml.azure.com/).
+
 2. On the left side, select **Notebooks**.
+
 3. Select the **Create new file** icon above the list **User files** in the **My files** section. 
 
 ![](https://docs.microsoft.com/en-us/azure/machine-learning/media/how-to-run-jupyter-notebooks/create-new-file.png)
@@ -130,10 +136,15 @@ You can also upload folders and files, including notebooks, with the tools at th
 
 Azure Machine Learning provides a shared file system for all users in the workspace. To clone a Git repository into this file share:
 * Follow the instructions [here](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/gitIntegration.md) to copy the details needed to clone the Git repo. 
+
 * Go back to your Azure ML workspace
+
 * Open a terminal. Once the terminal is opened, you have access to a full Git client and can clone and work with Git via the Git CLI experience.
+
 * It is advised that you clone the repository into your users directory so that others will not make collisions directly on your working branch. To do this type cd <path to user directory> e.g. `cd david`
+
 * Run git clone followed by the followed by the path copied from the Clone URL in the previous section, as shown in the following example. git clone https://dev.azure.com/fabrikam-fiber/MyFirstProject/_git/
+
 * Next it will ask for a password, paste the password shown when you cloned your git repo as shown [here](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/gitIntegration.md) and press Enter. 
 
 Git downloads a copy of the code, including all commits and branches from the repo, into a new folder for you to work with.
