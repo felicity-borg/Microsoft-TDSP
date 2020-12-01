@@ -150,7 +150,7 @@ To create a compute target:
 
 A file appears in VS Code with content similar to the one below:
 
-![](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/media/resources/json-examples.PNG)
+![](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/media/resources/json-examples.PNG?raw=true)
 
 8. When satisfied with the configuration, preess **Ctrl+Shift+P** to show the **Command Palette**.
 
