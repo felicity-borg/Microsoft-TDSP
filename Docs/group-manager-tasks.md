@@ -8,10 +8,16 @@ The following diagram shows the six main group manager setup tasks. Group manage
 
 
 1. Set up an **Azure DevOps organization** for the group.
+
 2. Create the default **GroupCommon project** in the Azure DevOps organization.
+
 3. Create the **GroupProjectTemplate** repository in Azure Repos.
+
 4. Create the **GroupUtilities** repository in Azure Repos.
-5. Import the contents of the Microsoft TDSP team's **ProjectTemplate** and **Utilities** repositories into the group common repositories. <br>
+
+5. Import the contents of the Microsoft TDSP team's 
+**ProjectTemplate** and **Utilities** repositories into the group common repositories. 
+
 6. Set up **membership** and **permissions** for team members to access the group.
 
 Each of the above steps are described in further detail below.
@@ -53,6 +59,7 @@ Azure Repos hosts the following types of repositories for your group:
 To set up the group common repositories in your project, you:
 
 * Rename the default **GroupCommon** repository to **GroupProjectTemplate**.
+
 * Create a new **GroupUtilities** repository.
 
 
@@ -150,6 +157,7 @@ To customize repository contents:
 If you want to make changes using your local machine or Azure Ml Service and push the changes up to the group repositories, make sure you have the prerequisites for working with Git and Azure ML:
 
 * An Azure ubscription, if you want to create a Azure ML workspace
+
 * Git installed on your machine—see the [Platforms and tools appendix](https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/platforms-and-tools#appendix).
 
 
