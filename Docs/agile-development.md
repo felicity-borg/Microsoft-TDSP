@@ -1,21 +1,3 @@
-<properties
-	pageTitle="Agile development of data science projects"
-	description="How a data scientist can execute a data science project in a systematic, version controlled, and collaborative way within a project team."  
-	services="machine-learning"
-	documentationCenter=""
-	authors="bradsev"
-	manager="jhubbard"
-	editor="cgronlun" />
-
-<tags
-	ms.service="machine-learning"
-	ms.workload="data-services"
-	ms.tgt_pltfrm="na"
-	ms.devlang="na"
-	ms.topic="article"
-	ms.date="09/21/2016"
-	ms.author="bradsev;hangzh;"/>
-
 
 # Agile development of data science projects
 
