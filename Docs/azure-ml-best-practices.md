@@ -11,10 +11,15 @@
 
 Azure uses limits and quotas to prevent budget overruns due to fraud, and to honor Azure capacity constraints. Consider these limits as you scale for production workloads.
 This section will cover:
+
 * Default limits on Azure resources related to [Azure Machine Learning](https://docs.microsoft.com/en-gb/azure/machine-learning/overview-what-is-azure-ml).
+
 * Creating workspace-level quotas.
+
 * Viewing your quotas and limits.
+
 * Requesting quota increases.
+
 * Private endpoint and DNS quotas.
 
 Along with managing quotas, you can learn how to [plan and manage costs for Azure Machine Learning](https://docs.microsoft.com/en-gb/azure/machine-learning/concept-plan-manage-cost).
@@ -138,7 +143,7 @@ You manage the Azure Machine Learning compute quota on your subscription separat
 
 1. Go to your **Azure Machine Learning** workspace in the Azure portal.
 
-2. On the left pane, in the **Support + troubleshooting** section, select *Usage + quotas** to view your current quota limits and usage.
+2. On the left pane, in the **Support + troubleshooting** section, select **Usage + quotas** to view your current quota limits and usage.
 
 3. Select a subscription to view the quota limits. Filter to the region you're interested in.
 
@@ -176,15 +181,15 @@ To request an allowance for these scenarios, use the following steps:
 
 2. In the **Details** section, use the **Description** field to provide the Azure region and the scenario that you plan to use. If you need to request quote increases for multiple subscriptions list the sunscriptions IDs in this field. 
 
-3. Select **Create* to create the request. 
+3. Select *Create* to create the request. 
 
 ![](https://docs.microsoft.com/en-gb/azure/machine-learning/media/how-to-manage-quotas/quota-increase-private-endpoint.png)
 
 ### Additional considerations
 * Create different workspaces by different department / business team / data tier, and per environment (development, staging, and production) - across relevant Azure subscriptions
 * Define workspace level tags which propagate to initially provisioned resources in managed resource group (Tags could also propagate from parent resource group)
-* Use Azure [Resource Manager templates templates](https://github.com/Azure/azure-quickstart-templates( to have a more managed way of deploying the workspaces - whether via CLI, PowerShell, or some SDK
-* Create relevant groups of users - using [Group REST API](https://docs.azuredatabricks.net/api/latest/groups.html) or by using [Azure Active Directory Group Sync with SCIM](https://docs.azuredatabricks.net/administration-guide/admin-settings/scim/index.html)/
+* Use Azure [Resource Manager templates templates](https://github.com/Azure/azure-quickstart-templates) to have a more managed way of deploying the workspaces - whether via CLI, PowerShell, or some SDK
+* Create relevant groups of users - using [Group REST API](https://docs.azuredatabricks.net/api/latest/groups.html) or by using [Azure Active Directory Group Sync with SCIM](https://docs.azuredatabricks.net/administration-guide/admin-settings/scim/index.html).
 
 ##  2. <a name='WSAdmin-2'></a>Understand workspace administration best practices
 
@@ -221,6 +226,8 @@ Azure Security Center provides unified security management and advanced threat p
 
 ### Download a configuration file
 If you will be creating a [compute instance](https://docs.microsoft.com/en-us/azure/machine-learning/tutorial-1st-experiment-sdk-setup#azure), skip this step. The compute instance has already created a copy of this file for you.
+
+
 ![](https://docs.microsoft.com/en-us/azure/machine-learning/media/how-to-manage-workspace/configure.png)
 
 Place the file into the directory structure with your Python scripts or Jupyter Notebooks. It can be in the same directory, a subdirectory named *.azureml*, or in a parent directory. When you create a compute instance, this file is added to the correct directory on the VM for you.
