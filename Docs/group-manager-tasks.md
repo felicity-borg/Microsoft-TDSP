@@ -4,6 +4,7 @@
 This page outlines the tasks that a *group manager* is expected to complete for a dtaa science organization. The group manager manages the entire dtaa scinece unit in an enterprise. A data science unit may have several teams, each of which is working on many data science projects in distinct business verticals. The group manager's objective is to establish a collaborative group environment that standardizes on the Team Data Science Process (TDSP). For an outline of all the personnel roles and associated tasks handled by a data science team standardizing on the TDSP, see [Team Data Science Process: roles and tasks](roles-tasks.md).
 
 The following diagram shows the six main group manager setup tasks. Group managers may delegate their tasks to surrogates, but the tasks associated with the role don't change.
+
 ![](https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/media/group-manager-tasks/tdsp-group-manager.png)
 
 
