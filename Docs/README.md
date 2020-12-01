@@ -1,7 +1,6 @@
 # Documentation to help you learn data science tools and help you execute a data science project in a systematic, version controlled, and collaborative way.
 
-How to use the Team Data Science Processs, an agile iterative data science metholdology for predictive analytics solutions and intelligent applications. 
-If you would like to set up the tools and frameworks for a larger project where a number of people will be contributing pages refer to **Roles and Tasks** followed by **Development** below. 
+The sections **Roles and Tasks** and **Development** detail how to use the Team Data Science Process (TDSP), an agile iterative data science metholdology for predictive analytics solutions and intelligent applications. This approach is recommended if you would like to set up the tools and frameworks for a larger project where a number of people will be contributing. For examples of organizations using TDSP see [New Signature](https://newsignature.com/services/), for a more detailed example see [Blue Granite](https://www.blue-granite.com/blog/getting-more-from-your-data-science-teams-organization-and-process-considerations).
 
 If you would like instructions on how to get started on a small project such as a Proof of Concept or you would like to develop some exerience using Azure DevOps, Azure ML and an IDE or text editor refer to pages in **Getting Started**.
 
