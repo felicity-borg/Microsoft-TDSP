@@ -64,7 +64,7 @@ In any case, team leads need to let their team members know which template and u
 ## Create the MyTeam project
 To create a separate project for your team:
 
-1. In your web browser, go to your group's Azure DevOps organization home page at URL *https://<server name>/<organization name>*, and select **New project**.
+1. In your web browser, go to your group's Azure DevOps organization home page whoch would be URL containing the following details "https:///organization name", and select **New project**.
 
 ![](https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/media/team-lead-tasks/team-leads-2-create-new-team.png)
 
@@ -74,7 +74,7 @@ To create a separate project for your team:
 
 ![](https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/media/team-lead-tasks/team-leads-3-create-new-team-2.png)
 
-The team project **Summary** page opens, with page URL *https://<server name>/<organization name>/<team name>*.
+The team project **Summary** page opens, with page URL containing the following information "https://server name/organization name/team name".
 	
 ## Rename the MyTeam default repository to TeamUtilities
 
@@ -116,7 +116,7 @@ The default **TeamTemplate** repository opens.
 
 ![](https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/media/team-lead-tasks/import-repo.png)
 
-3. In the **Import a Git repository** dialog, select **Git** as the **Source type**, and enter the URL for your group common template repository under **Clone URL**. The URL is *https://<server name>/<organization name>/_git/<repository name>*. For example: *https://dev.azure.com/DataScienceUnit/GroupCommon/_git/GroupProjectTemplate*.
+3. In the **Import a Git repository** dialog, select **Git** as the **Source type**, and enter the URL for your group common template repository under **Clone URL**. The URL will contain the details: "https://server name/organization name/_git/repository name". For example: "https://dev.azure.com/DataScienceUnit/GroupCommon/_git/GroupProjectTemplate".
 	
 4. Select **Import**. The contents of your group template repository are imported into your team template repository.
 
@@ -173,6 +173,7 @@ To add members to the team:
 ![](https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/media/team-lead-tasks/add-to-team.png)
 
 4. In the **Add users and groups** dialog, search for and select members to add to the group, and then select **Save changes**.
+
 ![](https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/media/team-lead-tasks/add-users.png)
 
 To configure permissions for team members:
