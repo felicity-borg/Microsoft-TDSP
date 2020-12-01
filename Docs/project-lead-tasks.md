@@ -59,7 +59,10 @@ To populate your project repository with the contents of your team template repo
 
 ![](https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/media/project-lead-tasks/project-leads-5-create-project-repo-4.png)
 
-4. In the **Import a Git repository** dialog, select **Git** as the **Source type**, and enter the URL for your **TeamTemplate** repository under **Clone URL**. The URL is *https://<server name>/<organization name>/<team name>/_git/<team template repository name>*. For example: *https://dev.azure.com/DataScienceUnit/MyTeam/_git/TeamTemplate*.
+4. In the **Import a Git repository** dialog, select **Git** as the **Source type**, and enter the URL for your **TeamTemplate** repository under **Clone URL**. The URL is:
+*https://server name/organization name/team name/_git/team template repository name*.
+ 
+ For example: *https://dev.azure.com/DataScienceUnit/MyTeam/_git/TeamTemplate*.
 
 5. Select **Import**. The contents of your team template repository are imported into your project repository.
 
