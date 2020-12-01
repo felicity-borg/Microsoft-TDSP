@@ -3,8 +3,11 @@
 This article describes how to use Git as the collaborative code development framework for data science projects. The article covers how to link code in Azure Repos to [agile development](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/project-execution.md) work items in Azure Boards, how to do code reviews, and how to create and merge pull requests for changes. For details on how to create a Git repos for your project see [here](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/createRepo.md).
 
 1. [Link a work item to an Azure Repos branch](#LinkWorkItem-1)
+
 2. [Work on the branch and commit changes](#WorkCommit-2)
+
 3. [Create a pull request](#PullRequest-3)
+
 4. [Review and merge](#ReviewMerge-4)
 
 
@@ -31,7 +34,7 @@ After you switch to the working branch, you can start developing code or documen
 
 It's a good practice to create a Git branch for each User Story work item. Then, for each Task work item, you can create a branch based on the User Story branch. Organize the branches in a hierarchy that corresponds to the User Story-Task relationship when you have multiple people working on different User Stories for the same project, or on different Tasks for the same User Story. You can minimize conflicts by having each team member work on a different branch, or on different code or other artifacts when sharing a branch.
 
-The following diagram shows the recommended branching strategy for TDSP. You might not need as many branches as shown here, especially when only one or two people work on a project, or only one person works on all Tasks of a User Story. But separating the development branch from the primary branch is always a good practice, and can help prevent the release branch from being interrupted by development activities. For a complete description of the Git branch model, see A [Successful Git Branching Model](https://nvie.com/posts/a-successful-git-branching-model/).
+The following diagram shows the recommended branching strategy for TDSP. You might not need as many branches as shown here, especially when only one or two people work on a project, or only one person works on all Tasks of a User Story. But separating the development branch from the primary branch is always a good practice, and can help prevent the release branch from being interrupted by development activities. For a complete description of the Git branch model, see [Successful Git Branching Model](https://nvie.com/posts/a-successful-git-branching-model/).
 
 ![](https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/media/collaborative-coding-with-git/3-git-branches.png)
 
