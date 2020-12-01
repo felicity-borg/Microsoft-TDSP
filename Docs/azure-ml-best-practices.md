@@ -1,6 +1,7 @@
 # Describe Azure ML Service best practices
 
 **Contents**: 
+
 1. [Manage and increase quotas for resources with Azure Machine Learning](#Quotas-1)
 
 2. [Understand workspace administration best practices](#WSAdmin-2)
