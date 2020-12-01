@@ -34,7 +34,7 @@ To clone repositories and modify content on your local machine or Azure ML noteb
 ## Create a project repository in your team project
 To create a project repository in your team's **MyTeam** project:
 
-1) Go to your team's project **Summary** page at *https://<server name>/<organization name>/<team name>*, for example, **https://dev.azure.com/DataScienceUnit/MyTeam**, and select **Repos** from the left navigation.
+1) Go to your team's project **Summary** page which would be in the format: "https://server name/organization name/team name", for example, "https://dev.azure.com/DataScienceUnit/MyTeam", and select **Repos** from the left navigation.
 
 2. Select the repository name at the top of the page, and then select **New repository** from the dropdown.
 
@@ -59,10 +59,9 @@ To populate your project repository with the contents of your team template repo
 
 ![](https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/media/project-lead-tasks/project-leads-5-create-project-repo-4.png)
 
-4. In the **Import a Git repository** dialog, select **Git** as the **Source type**, and enter the URL for your **TeamTemplate** repository under **Clone URL**. The URL is:
-*https://server name/organization name/team name/_git/team template repository name*.
- 
- For example: *https://dev.azure.com/DataScienceUnit/MyTeam/_git/TeamTemplate*.
+4. In the **Import a Git repository** dialog, select **Git** as the **Source type**, and enter the URL for your **TeamTemplate** repository under **Clone URL**. The URL is the format:
+"https://server name/organization name/team name/_git/team template repository name".
+For example: "https://dev.azure.com/DataScienceUnit/MyTeam/_git/TeamTemplate".
 
 5. Select **Import**. The contents of your team template repository are imported into your project repository.
 
