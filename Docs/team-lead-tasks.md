@@ -200,9 +200,13 @@ First ensure that you have Azure CLI insitalled. For instructions on installing 
 1. Run the following script to create Azure file storage for data assets that are useful for your entire team. The script prompts you for your Azure subscription information, so have that ready to enter.
 
 * On a Windows machine, run the script from the PowerShell command prompt:
+
 `wget "https://raw.githubusercontent.com/Azure/`
+
 `Azure-MachineLearning-DataScience/master/Misc/TDSP/`
+
 `CreateFileShare.ps1" -outfile "CreateFileShare.ps1"`
+
 `.\CreateFileShare.ps1`
 
 2. Log in to your Microsoft Azure account when prompted, and select the subscription you want to use.
@@ -214,14 +218,18 @@ First ensure that you have Azure CLI insitalled. For instructions on installing 
 ## Mount Azure file storage on your local machine
 
  1. To mount your Azure file storage to your local machine when using Windows, use the following script.
-  `wget "https://raw.githubusercontent.com/Azure/`
+
+`wget "https://raw.githubusercontent.com/Azure/`
+
 `Azure-MachineLearning-DataScience/master/Misc/TDSP/`
+
 `AttachFileShare.ps1" -outfile "AttachFileShare.ps1"`
+
 `.\AttachFileShare.ps1`
 
 * On a Linux machine, run the script from the Linux shell:
 
-`wget "https://raw.githubusercontent.com/Azure' 
+`wget "https://raw.githubusercontent.com/Azure`
 
 `Azure-MachineLearning-DataScience/master/Misc/`
 
