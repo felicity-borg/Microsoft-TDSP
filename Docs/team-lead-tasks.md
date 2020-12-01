@@ -32,24 +32,29 @@ These steps are covered in more detail below
 It is assumed that the following resources and permissions have been set up by your group manager:
 
 * The Azure DevOps **organization** for your data unit
+
 * **GroupProjectTemplate** and **GroupUtilities** repositories, populated with the contents of the Microsoft TDSP team's **ProjectTemplate** and **Utilities** repositories
 Permissions on your organization account for you to create projects and repositories for your team
 
 To be able to clone repositories and modify their content on your local machine or Azure ML notebooks you need the following:
 
 * An Azure subscription.
+
 * A Git installed on your machine will be useful if you want to also run code on an IDE on your local machine. 
 
 ## Create a team project and repositories
 In this section, you create the following resources in your group's Azure DevOps organization:
 
 * The **MyTeam** project in Azure DevOps
+
 * The **TeamTemplate** repository
+
 * The **TeamUtilities** repository
 
 The names specified for the repositories and directories in this tutorial assume that you want to establish a separate project for your own team within your larger data science organization. However, the entire group can choose to work under a single project created by the group manager or organization administrator. Then, all the data science teams create repositories under this single project. This scenario might be valid for:
 
 * A small data science group that doesn't have multiple data science teams.
+
 * A larger data science group with multiple data science teams that nevertheless wants to optimize inter-team collaboration with activities such as group-level sprint planning.
 
 If teams choose to have their team-specific repositories under a single group project, the team leads should create the repositories with names like *<TeamName>Template and <TeamName>Utilities*. For instance: *TeamATemplate* and *TeamAUtilities*.
