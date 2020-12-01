@@ -1,14 +1,14 @@
 # Documentation to help you learn data science tools and help you execute a data science project in a systematic, version controlled, and collaborative way.
 
-The sections **Roles and Tasks** and **Development** detail how to use the Team Data Science Process (TDSP), an agile iterative data science metholdology for predictive analytics solutions and intelligent applications. This approach is recommended if you would like to set up the tools and frameworks for a larger project where a number of people will be contributing. For examples of organizations using TDSP see [New Signature](https://newsignature.com/services/), for a more detailed example see [Blue Granite](https://www.blue-granite.com/blog/getting-more-from-your-data-science-teams-organization-and-process-considerations).
+The sections **Roles and Tasks** and **Development** detail how to use the Team Data Science Process (TDSP), an agile iterative data science methodology for predictive analytics solutions and intelligent applications. This approach is recommended if you would like to set up the tools and frameworks for a larger project where a number of people will be contributing. For examples of organizations using TDSP see [New Signature](https://newsignature.com/services/), for a more detailed example see [Blue Granite](https://www.blue-granite.com/blog/getting-more-from-your-data-science-teams-organization-and-process-considerations).
 
-If you would like instructions on how to get started on a small project such as a Proof of Concept or you would like to develop some exerience using Azure DevOps, Azure ML and an IDE or text editor refer to pages in **Getting Started**.
+If you would like instructions on how to get started on a small project such as a Proof of Concept or you would like to develop some experience using Azure DevOps, Azure ML and an IDE or text editor refer to pages in **Getting Started**.
 
 **Getting Started** contains two options for code development: 
- * **Visual Studio Code**: VS Code is a fully featured text editor which includes debugging tools and other advanced features and extensions that improve code quality and      producitvity when programming.
- * **Jupyter Notebooks**: Jupyter Notebooks are useful for setting global variables and diplaying outputs in the same place as code e.g. when writing reports and when code is not to be re-used. 
+ * **Visual Studio Code**: VS Code is a fully featured text editor which includes debugging tools and other advanced features and extensions that improve code quality and      productivity when programming.
+ * **Jupyter Notebooks**: Jupyter Notebooks are useful for setting global variables and displaying outputs in the same place as code e.g. when writing reports and when code is not to be re-used. 
 
-Both can be used together to their strengths, e.g. complex code is writen as a module (e.g. Python file containing class and function definitions) in VS code, and called from the jupyter notebook to set variables and display results.
+Both can be used together to their strengths, e.g. complex code is written as a module (e.g. Python file containing class and function definitions) in VS code, and called from the jupyter notebook to set variables and display results.
 
 	
 # Documentation Contents
@@ -72,6 +72,7 @@ The goals, tasks, and documentation artifacts for each stage of the lifecycle in
 * Data scientist
 * Application developer
 * Project lead
+
 The following diagram provides a grid view of the tasks (in blue) and artifacts (in green) associated with each stage of the lifecycle (on the horizontal axis) for these roles (on the vertical axis).
 
 ![](https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/media/overview/tdsp-tasks-by-roles.png)
@@ -79,7 +80,7 @@ The following diagram provides a grid view of the tasks (in blue) and artifacts 
 ## Standardized project structure
 Having all projects share a directory structure and use templates for project documents makes it easy for the team members to find information about their projects. All code and documents are stored in a version control system (VCS) like Git, to enable team collaboration. Tracking tasks and features in an agile project tracking system like Jira, Rally, and Azure DevOps allows closer tracking of the code for individual features. Such tracking also enables teams to obtain better cost estimates. TDSP recommends creating a separate repository for each project on the VCS for versioning, information security, and collaboration. The standardized structure for all projects helps build institutional knowledge across the organization.
 
-Microsoft templates are provided in this GitHib repo to help provide folder structure and required documents in standard locations. This folder structure organizes the files that contain code for data exploration and feature extraction, and that record model iterations. These templates make it easier for team members to understand work done by others and to add new members to teams. It is easy to view and update document templates in markdown format. Use templates to provide checklists with key questions for each project to insure that the problem is well defined and that deliverables meet the quality expected. Examples include:
+Microsoft templates are provided in this GitHub repo to help provide folder structure and required documents in standard locations. This folder structure organizes the files that contain code for data exploration and feature extraction, and that record model iterations. These templates make it easier for team members to understand work done by others and to add new members to teams. It is easy to view and update document templates in markdown format. Use templates to provide checklists with key questions for each project to insure that the problem is well defined and that deliverables meet the quality expected. Examples include:
 
 * a project charter to document the business problem and scope of the project
 * data reports to document the structure and statistics of the raw data
@@ -111,5 +112,3 @@ Introducing processes in most organizations is challenging. Tools provided to im
 
 ### Next steps 
 [Team Data Science Process: Roles and tasks](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/roles-tasks.md) outlines the key personnel roles and their associated tasks for a data science team that standardizes on this process.
-
-
