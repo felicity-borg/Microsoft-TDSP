@@ -18,13 +18,17 @@ For Step 6: Set up security control of project repository, refer to **Add team m
 This tutorial assumes that your group manager and team lead have set up the following resources and permissions:
 
 * The Azure DevOps **organization** for your data unit
+
 * A team **project** for your data science team
+
 * Team template and utilities **repositories**
+
 * **Permissions** on your organization account for you to create and edit repositories for your project
 
 To clone repositories and modify content on your local machine or Azure ML notebooks, or set up Azure file storage and mount it, you also need to consider this checklist:
 
 * An Azure subscription.
+
 * Git installed on your machine.
 
 ## Create a project repository in your team project
