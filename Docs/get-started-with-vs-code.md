@@ -7,24 +7,26 @@ If you would like to use these tools for a substantial project within a larger t
 
 This page will give you further links for detailed instructions on your role and how to get started with your project. Details covered include how to [get started with Azure DevOps](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/agile-development.md), [creating a project repository](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/group-manager-tasks.md) and [setting up security control—adding project members and configuring permissions](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/project-lead-tasks.md). 
 
-![](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/media/resources/DevGitVis.PNG) <br>
+![](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/media/resources/DevGitVis.PNG) 
+
 *An overview of the tools used for this solution*
 
-1. [Azure DevOps](#AzureDevOps-1) Use Azure DevOps to create and manage your project. You can use this to break down your project into smaller tasks for e.g. ingest data, preprocess data, build features, etc. <br>
+1. [Azure DevOps](#AzureDevOps-1) Use Azure DevOps to create and manage your project. You can use this to break down your project into smaller tasks for e.g. ingest data, preprocess data, build features, etc. 
 
-2. [Git Repository](#GitRepo-2) Create a git repo for your project to manage your code. Git is a distributed version control system. Git repositories can live locally (such as on a developer’s machine). Each developer has a copy of the source repository on their dev machine. Developers can commit each set of changes on their dev machine and perform version control operations such as history and compare without a network connection.<br>
+2. [Git Repository](#GitRepo-2) Create a git repo for your project to manage your code. Git is a distributed version control system. Git repositories can live locally (such as on a developer’s machine). Each developer has a copy of the source repository on their dev machine. Developers can commit each set of changes on their dev machine and perform version control operations such as history and compare without a network connection. 
 
-3. [Visual Studio Code](#VisualCode-3) Launch an Azure Machine Learning (ML) workspace using Visual Studio Code, and clone the git repo onto your directory in the workspace's shared workspace file system. Once cloned you can develop your code in Visual Studio Code and use git to save a set o changes, perform version control operations such as history and share their code with colleagues.  use Jupyter notebooks to write your code. With your workspace now connected to your git repo you can `commit` (save) changes and `push` them back to your git repo in Azure DevOps. If files are added to the git repo you and colleagues can `pull` these changes onto your workspace making collaborating with colleagues easy.<br>
+3. [Visual Studio Code](#VisualCode-3) Launch an Azure Machine Learning (ML) workspace using Visual Studio Code, and clone the git repo onto your directory in the workspace's shared workspace file system. Once cloned you can develop your code in Visual Studio Code and use git to save a set o changes, perform version control operations such as history and share their code with colleagues.  use Jupyter notebooks to write your code. With your workspace now connected to your git repo you can `commit` (save) changes and `push` them back to your git repo in Azure DevOps. If files are added to the git repo you and colleagues can `pull` these changes onto your workspace making collaborating with colleagues easy.
 
 
 ## 1. <a name='AzureDevOps-1'></a>Create a project in Azure DevOps
 
 ### Prerequisites
-* You need an organization before you can create a project. <br>
-If you haven't created an organization yet, create one by following the instructions in [Sign up, sign in to Azure DevOps, which also creates a project](https://docs.microsoft.com/en-us/azure/devops/user-guide/sign-up-invite-teammates?view=azure-devops). <br>
+* You need an organization before you can create a project. 
+If you haven't created an organization yet, create one by following the instructions in [Sign up, sign in to Azure DevOps, which also creates a project](https://docs.microsoft.com/en-us/azure/devops/user-guide/sign-up-invite-teammates?view=azure-devops).
 Or see [Create an organization or project collection](https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/create-organization?view=azure-devops). 
-If you have a Microsoft account follow the instructions fot the heading **Sign up with a personal Microsoft account** [here](https://docs.microsoft.com/en-us/azure/devops/user-guide/sign-up-invite-teammates?view=azure-devops) and then refer back to this documentation. <br>
-If you are going to sign up with a newly created Microsoft account (MWS), your project is automatically created and named based on your sign-in. <br>
+If you have a Microsoft account follow the instructions fot the heading **Sign up with a personal Microsoft account** [here](https://docs.microsoft.com/en-us/azure/devops/user-guide/sign-up-invite-teammates?view=azure-devops) and then refer back to this documentation. 
+If you are going to sign up with a newly created Microsoft account (MWS), your project is automatically created and named based on your sign-in. 
+
 * To create a new project you must be a member of the Project Collection Administrators group or have the **Create new projects** permission set to **Allow**. If you're the Organization Owner, you're automatically added to the Project Collection Administrators group. If you aren't a member, get added before following this documentation. For more information, see [Set permissions at the project- or collection-level](https://docs.microsoft.com/en-us/azure/devops/organizations/security/set-project-collection-level-permissions?view=azure-devops).
 
 
@@ -154,7 +156,8 @@ A file appears in VS Code with content similar to the one below:
 
 9. Enter the following command into the command palette to save your run configuration file.
 
-*text* <br>
+*text* 
+
 `Azure ML: Save and Continue`
 
 After a few minutes, the new compute target appears in the Compute clusters node of your workspace.
@@ -170,17 +173,21 @@ Azure Machine Learning provides a shared file system for all users in the worksp
 
 3. Press **Ctrl+Shift+P** to show the **Command Palette**. 
 
-4. Execute the **Git: Clone command**. It may help to type **“Git”** to bring it to the shortlist. <br>
+4. Execute the **Git: Clone command**. It may help to type **“Git”** to bring it to the shortlist. 
+
 ![](https://azuredevopslabs.com/labs/azuredevops/git/images/003.png)
 
-5. Paste in the URL to your repo and press **Enter**. <br>
+5. Paste in the URL to your repo and press **Enter**. 
+
 ![](https://azuredevopslabs.com/labs/azuredevops/git/images/004.png)
 
 6. Select a local path to clone the repo to—it is advised that you clone the repository into your users directory so that others will not make collisions directly on your working branch. An option is to clone it in your own 'users' directory. 
 
 7. When prompted, log in to your Azure DevOps account.
 
-8. Once the cloning has completed, click **Open** to open the cloned repository. <br>
+8. Once the cloning has completed, click **Open** to open the cloned repository. 
+
+
 ![](https://azuredevopslabs.com/labs/azuredevops/git/images/005_new.png)
 
 
