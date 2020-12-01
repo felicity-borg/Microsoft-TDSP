@@ -2,8 +2,11 @@
 
 **Contents**: 
 1. [Manage and increase quotas for resources with Azure Machine Learning](#Quotas-1)
+
 2. [Understand workspace administration best practices](#WSAdmin-2)
+
 3. [Security best practices](#security-3)
+
 3. [Tools and integration best practices](#Integ-4)
 
 

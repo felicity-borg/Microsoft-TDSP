@@ -23,7 +23,7 @@
 | Subscription | Select the Azure subscription that you want to use. |
 | Resource group | Use an existing resource group in your subscription or enter a name to create a new resource group. A resource group holds related resources for an Azure solution. In this example, we use **docs-aml**. You need *contributor* or *owner* role to use an existing resource group. For more information about access, see [Manage access to an Azure Machine Learning workspace](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-assign-roles). |
 | Region | Select the Azure region closest to your users and the data resources to create your workspace. |
-| Stroag account | The default storage account for the workspace. By default, a new one is created. |
+| Stroage account | The default storage account for the workspace. By default, a new one is created. |
 | Key Vault | The Azure Key Vault used by the workspace. By default, a new one is created. |
 | Application Insights | The application insights instance for the workspace. By default, a new one is created. |
 | Container Registry | The Azure Container Registry for the workspace. By default, a new one is *not* initially created for the workspace. Instead, it is created once you need it when creating a Docker image during training or deployment. | 
