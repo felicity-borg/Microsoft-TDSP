@@ -2,6 +2,7 @@
 
 This document will detail how:
 * You can access your data with the [Azure Machine Learning studio](https://docs.microsoft.com/en-us/azure/machine-learning/overview-what-is-machine-learning-studio) without using code. 
+
 * Connect to your data in storage services on Azure with [Azure Machine Learning datastores](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-access-data), and then package that data for tasks in your ML workflows with [Azure Machine Learning datasets](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-create-register-datasets).
 
 The following table defines and summarizes the benefits of datastores and datasets.
@@ -41,28 +42,42 @@ There are two types of datasets, FileDataset and TabularDataset. [FileDatasets](
 The following steps and animation show how to create a dataset in [Azure Machine Learning studio](https://ml.azure.com/).
 
 **Note**—Datasets created through Azure Machine Learning studio are automatically registered to the workspace.
+
 ![](https://docs.microsoft.com/en-us/azure/machine-learning/media/how-to-connect-data-ui/create-dataset-ui.gif)
 
 To create a dataset in the studio:
 
 1. Sign in to the [Azure Machine Learning studio](https://ml.azure.com/).
-2 Select **Datasets** in the **Assets** section of the left pane.
+
+2. Select **Datasets** in the **Assets** section of the left pane.
+
 3. Select **Create Dataset** to choose the source of your dataset. This source can be local files, a datastore, public URLs, or [Azure Open Datasets](https://docs.microsoft.com/en-us/azure/open-datasets/how-to-create-azure-machine-learning-dataset-from-open-dataset).
+
 4. Select **Tabular** or **File** for Dataset type.
+
 5. Select **Next** to open the **Datastore and file selection** form. On this form you select where to keep your dataset after creation, as well as select what data files to use for your dataset. 
+
   * Enable skip validation if your data is in a virtual network. Learn more about [virtual network isolation and privacy](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-enable-studio-virtual-network).
+
   * For Tabular datasets, you can specify a 'timeseries' trait to enable time related operations on your dataset. Learn how to [add the timeseries trait to your dataset](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-monitor-datasets#studio-dataset).
+
 6. Select **Next** to populate the **Settings and preview** and **Schema** forms; they are intelligently populated based on file type and you can further configure your dataset prior to creation on these forms.
+
 7. Select **Next** to review the **Confirm details** form. Check your selections and create an optional data profile for your dataset. Learn more about [data profiling](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-connect-data-ui#profile).
+
 8. Select **Create** to complete your dataset creation.
 
 ## Data profile and preview
 After you create your dataset, verify you can view the profile and preview in the studio with the following steps.
 
 1. Sign in to the Azure Machine Learning studio
+
 2. Select **Datasets** in the **Assets** section of the left pane.
+
 3. Select the name of the dataset you want to view.
+
 4. Select the **Explore** tab.
+
 5. Select the **Preview** or **Profile** tab.
 
 ![](https://docs.microsoft.com/en-us/azure/machine-learning/media/how-to-connect-data-ui/dataset-preview-profile.gif)
@@ -107,8 +122,11 @@ You can find account key, SAS token, and service principal information on your [
 
 * If you plan to use an account key or SAS token for authentication, select **Storage Accounts** on the left pane, and choose the storage account that you want to register.
   The **Overview** page provides information such as the account name, container, and file share name.
+
     1. For account keys, go to **Access keys** on the **Settings pane**.
+
     2. For SAS tokens, go to **Shared access signatures** on the **Settings pane**.
+
 * If you plan to use a [service principal](https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal) for authentication, go to your **App registrations** and select which app you want to use.
   * Its corresponding **Overview** page will contain required information like tenant ID and client ID.
 
@@ -117,7 +135,9 @@ You can find account key, SAS token, and service principal information on your [
 
 ## Permission 
 For Azure blob container and Azure Data Lake Gen 2 storage, make sure your authentication credentials have **Storage Blob Data Reader** access. Learn more about [Storage Blob Data Reader](https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles#storage-blob-data-reader). An account SAS token defaults to no permissions.
+
 * For data **read access**, your authentication credentials must have a minimum of list and read permissions for containers and objects.
+
 * For data **write access**, write and add permissions also are required.
 
 ## Train with datasets
