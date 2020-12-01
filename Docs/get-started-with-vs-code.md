@@ -33,7 +33,9 @@ If you are going to sign up with a newly created Microsoft account (MWS), your p
 ## Create a project
 
 1. Navigate to your organization page `https://dev.azure.com/{yourorganization}`.
+
 2. Select **Azure DevOps** to open the **Projects page**. 
+
 3. Choose the organization, and then select **New Project**. 
 
 ![](https://docs.microsoft.com/en-us/azure/devops/organizations/projects/media/create-project/projects-hub-select-new-project.png?view=azure-devops)
@@ -53,11 +55,16 @@ Select visibility of either public or private. When you choose public visibility
 ## 2. <a name='GitRepo-2'></a>Add a Git repo to your project
 
 1. Navigate to the **Repos** page in your project, hover your mouse over the name of your project and select the **Repos** icon. 
+
 ![](https://docs.microsoft.com/en-us/azure/devops/repos/git/media/repo-mgmt/select-project-repos.png?view=azure-devops)
 2. From the repo drow-down, select **New repository**.
+
 ![](https://docs.microsoft.com/en-us/azure/devops/repos/git/media/repo-mgmt/new-repository.png?view=azure-devops)
+
 3. In the **Create a new repository** dialog, verify that Git is the repo type and enter a name for your new repo. You can also choose to add a README and create a .gitignore for the type of code you plan to manage in the repo. A README contains information about the code in your repo, and a .gitignore file tells Git which types of files to ignore, such as temporary build files from your development environment.
+
 ![](https://docs.microsoft.com/en-us/azure/devops/repos/git/media/repo-mgmt/create-a-new-repository.png?view=azure-devops)
+
 4. When you're happy with the repo name and choices, select **Create**.
 
 A new empty Git repo is now created in your project.
@@ -68,13 +75,17 @@ A new empty Git repo is now created in your project.
 
 #### Prerequisites
 * Visual Studio Code. If you don't have it, [install it](https://code.visualstudio.com/docs/setup/setup-overview).
+
 * [Python 3](https://www.python.org/downloads/)
 
 #### Install the extension
 
 1. Open Visual Studio Code
+
 2. Select **Extensions** icon from the **Activity Bar** to open the Extensions View.
+
 3. In the Extensions view, search for "Azure Machine Learning".
+
 4. Select **Install**.
 
 ![](https://docs.microsoft.com/en-us/azure/machine-learning/media/tutorial-setup-vscode-extension/install-aml-vscode-extension.png)
@@ -97,6 +108,7 @@ In order to provision resources and run workloads on Azure, you have to sign in 
 The first thing you have to do to build an application in Azure Machine Learning is to create a workspace. A workspace contains the resources to train models as well as the trained models themselves. For more information, see [what is a workspace](https://docs.microsoft.com/en-us/azure/machine-learning/concept-workspace).
 
 1. On the Visual Studio Code activity bar, select the **Azure** icon to open the Azure Machine Learning view. 
+
 2. Right-click your Azure subscription and select **Create Workspace**.
 
 ![](https://docs.microsoft.com/en-us/azure/machine-learning/media/tutorial-train-deploy-image-classification-model-vscode/create-workspace.png)
@@ -135,6 +147,7 @@ To create a compute target:
 7. Name your compute for e.g., "TeamWkspc-com" and press **Enter** to create your compute.
 
 A file appears in VS Code with content similar to the one below:
+
 ![](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/media/resources/json-examples.PNG)
 
 8. When satisfied with the configuration, preess **Ctrl+Shift+P** to show the **Command Palette**.
@@ -150,15 +163,23 @@ After a few minutes, the new compute target appears in the Compute clusters node
 ### Clone Git repositories into your workspace file system
 
 Azure Machine Learning provides a shared file system for all users in the workspace. To clone a Git repository into this file share:
+
 1. Follow the instructions [here](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/gitIntegration.md) to copy the details needed to clone the Git repo. 
-2. Go back to your **Viusa Studio Code** instance. 
+
+2. Go back to your **Viusa Studio Code** instance.
+
 3. Press **Ctrl+Shift+P** to show the **Command Palette**. 
+
 4. Execute the **Git: Clone command**. It may help to type **“Git”** to bring it to the shortlist. <br>
 ![](https://azuredevopslabs.com/labs/azuredevops/git/images/003.png)
+
 5. Paste in the URL to your repo and press **Enter**. <br>
 ![](https://azuredevopslabs.com/labs/azuredevops/git/images/004.png)
+
 6. Select a local path to clone the repo to—it is advised that you clone the repository into your users directory so that others will not make collisions directly on your working branch. An option is to clone it in your own 'users' directory. 
+
 7. When prompted, log in to your Azure DevOps account.
+
 8. Once the cloning has completed, click **Open** to open the cloned repository. <br>
 ![](https://azuredevopslabs.com/labs/azuredevops/git/images/005_new.png)
 
