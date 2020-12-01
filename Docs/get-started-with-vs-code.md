@@ -7,7 +7,7 @@ If you would like to use these tools for a substantial project within a larger t
 
 This page will give you further links for detailed instructions on your role and how to get started with your project. Details covered include how to [get started with Azure DevOps](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/agile-development.md), [creating a project repository](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/group-manager-tasks.md) and [setting up security control—adding project members and configuring permissions](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/project-lead-tasks.md). 
 
-![](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/media/resources/DevGitVis.PNG) 
+![](https://github.com/felicity-borg/Microsoft-TDSP/blob/master/Docs/media/resources/DevGitVis.PNG?raw=true) 
 
 *An overview of the tools used for this solution*
 
@@ -30,7 +30,7 @@ If you are going to sign up with a newly created Microsoft account (MWS), your p
 * To create a new project you must be a member of the Project Collection Administrators group or have the **Create new projects** permission set to **Allow**. If you're the Organization Owner, you're automatically added to the Project Collection Administrators group. If you aren't a member, get added before following this documentation. For more information, see [Set permissions at the project- or collection-level](https://docs.microsoft.com/en-us/azure/devops/organizations/security/set-project-collection-level-permissions?view=azure-devops).
 
 
->[Important] To create a public project, or to make a private project public, see [Create a public project in your organization](https://docs.microsoft.com/en-us/azure/devops/organizations/public/create-public-project?view=azure-devops) or [Change the project visibility, public or private](https://docs.microsoft.com/en-us/azure/devops/organizations/public/make-project-public?view=azure-devops). Additional policy settings must be enabled to work with public projects.
+**Important**: To create a public project, or to make a private project public, see [Create a public project in your organization](https://docs.microsoft.com/en-us/azure/devops/organizations/public/create-public-project?view=azure-devops) or [Change the project visibility, public or private](https://docs.microsoft.com/en-us/azure/devops/organizations/public/make-project-public?view=azure-devops). Additional policy settings must be enabled to work with public projects.
 
 ## Create a project
 
