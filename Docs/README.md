@@ -1,4 +1,4 @@
-# Documentation to help you learn data science tools and help you execute a data science project in a systematic, version controlled, and collaborative way.
+# Documentation on how to execute a data science project in a systematic, version controlled, and collaborative way using Azure
 
 The sections **Roles and Tasks** and **Development** detail how to use the Team Data Science Process (TDSP), an agile iterative data science methodology for predictive analytics solutions and intelligent applications. This approach is recommended if you would like to set up the tools and frameworks for a larger project where a number of people will be contributing. For examples of organizations using TDSP see [New Signature](https://newsignature.com/services/), for a more detailed example see [Blue Granite](https://www.blue-granite.com/blog/getting-more-from-your-data-science-teams-organization-and-process-considerations).
 
