@@ -117,12 +117,8 @@ You can also upload folders and files, including notebooks, with the tools at th
 
 | **Field** | **Description** |
 | --------- | --------------- |
-| Compute name | * Name is required and must be between 3 to 24 characters long.
-* Valid characters are upper and lower case letters, digits, and the - character.
-* Name must start with a letter.
-* Name needs to be unique across all existing computes within an Azure region. You will see an alert if the name you choose is not unique.
-* If - character is used, then it needs to be followed by at least one letter later in the name. |
-| Virtual machine type | Chooose CPU or GPU. thus type cannot be changed after creation. Select CPU for general use unless you know your code will use GPU (example for training deep learning models |
+| Compute name | * Name is required and must be between 3 to 24 characters long.|
+| Virtual machine type | Chooose CPU or GPU. The type cannot be changed after creation. Select CPU for general use unless you know your code will use GPU (example for training deep learning models |
 | Virtual machine size | Supported virtual machine sizes might be restricted in your region. Check the [availability list](https://azure.microsoft.com/global-infrastructure/services/?products=virtual-machines) |
 | Enable/disable SSH access | SSH access is disabled by default. SSH access cannot be. changed after creation. Make sure to enable access if you plan to debug interactively with [VS Code Remote](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-set-up-vs-code-remote) |
 | Advanced settings | Optional. Configure a virtual network. Specify the **Resource group**, **Virtual network**, and **Subnet** to create the compute instance inside an Azure Virtual Network (vnet). For more information, see these network requirements for vnet.
